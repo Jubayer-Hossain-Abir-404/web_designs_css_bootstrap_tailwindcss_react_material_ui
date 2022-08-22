@@ -88,3 +88,31 @@ section{
 .recipeTitle{
     font-weight: 800;
 }
+
+.divForStat{
+    margin-left: 5%;
+    margin-right: 7%;
+    background-color: white;
+    display: flex;
+    padding: 0px 5px 30px 5px;
+    border-radius: 30px;
+    box-shadow: 1px 1px 25px gray;
+    
+}
+
+.statNumberText{
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 1px;
+}
+
+.statDesc{
+    font-size: 16px;
+    color: #18191F;
+    font-weight: 400;
+}
+
+.statItem{
+    margin-left: 10%;
+    margin-right: 10%;
+}
