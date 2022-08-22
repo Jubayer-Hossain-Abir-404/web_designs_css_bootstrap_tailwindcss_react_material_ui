@@ -6,6 +6,10 @@ h1{
     font-size: 60px;
 }
 
+h2{
+    font-size: 40px;
+}
+
 section{
     margin-top: 80px;
 }
@@ -31,11 +35,29 @@ section{
     width: 50%;
 }
 
-.halfWidth img{
-    width: 100%;
-}
+
 
 #heroSection{
     margin-left: 5%;
 }
 
+.otherSectionTitle{
+    color: #707070;
+    font-weight: 700;
+}
+
+.paraDescription{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+}
+
+#aboutMeSection{
+    margin-left: 15%;
+    margin-right: 10%;
+}
+
+.aboutMeBg{
+    background-image: url(./images/shapes/7.png);
+    padding-top: 80px;
+}
