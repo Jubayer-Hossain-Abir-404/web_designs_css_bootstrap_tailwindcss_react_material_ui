@@ -17,16 +17,27 @@ main{
 .container{ 
     background-color: white;
     width: 870px;
+    padding: 30px;
+    border-radius: 5px;
+    margin: 21px;
 }
 
 .sectionName{
     font-size: 24px;
     color: #562EFF;
+    margin-top: 3px;
+}
+
+hr{
+    border: 0.5px solid #D1D1D1;
 }
 
 
 /* top player and top blog */
 
+.topPlayer{
+    margin-bottom: 30px;
+}
 .players{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
