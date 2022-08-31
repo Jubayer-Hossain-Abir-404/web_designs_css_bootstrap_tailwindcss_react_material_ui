@@ -6,9 +6,27 @@
 body{
     font-family: 'Poppins', sans-serif;
     background-color: #F3F1FF;
+    position: relative;
 }
 
+header{
+    background-color: #562EFF;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0 10px 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+}
+
+nav{
+    width: 930px;
+    display: flex;
+    justify-content: space-between;
+}
 main{
+    margin-top: 100px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -32,6 +50,39 @@ hr{
     border: 0.5px solid #D1D1D1;
 }
 
+/* header section */
+.logoPart{
+    display: flex;
+    align-items: center;
+}
+
+.logo img{
+    width: 41px;
+    height: 51px;
+}
+
+.logoTitle{
+    font-size: 24px;
+    color: #FFFFFF;
+    margin-left: 16px;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+}
+
+.menu a{
+    margin-right: 36px;
+    text-decoration: none;
+    font-size: 16px;
+    color: #FFFFFF;
+}
+
+.menu img{
+    width: 51px;
+    height: 51px;
+}
 
 /* top player and top blog */
 
@@ -69,7 +120,7 @@ hr{
 }
 .blog{
     display: flex;
-    align-items: center;
+    align-items: flex-end;
 }
 .blogImage img{
     width: 177px;
@@ -161,6 +212,14 @@ hr{
 /* media queries */
 /* mobile devices */
 @media only screen and (max-width: 668px){
+    nav {
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    nav a{
+        display: none;
+    }
     .container{
         width: 100%;
     }
@@ -176,6 +235,7 @@ hr{
     }
     .blog{
         flex-direction: column;
+        align-items: center;
     }
 
     .courses{
@@ -187,6 +247,10 @@ hr{
 
 /* tablet devices */
 @media only screen and (min-width:668px) and (max-width:992px) {
+    nav{
+        width: 100%;
+        justify-content: space-around;
+    }
     .container {
         width: 100%;
     }
@@ -197,6 +261,10 @@ hr{
 
     .blogs {
         grid-template-columns: repeat(1, 1fr);
+    }
+
+    .blog{
+        align-items: stretch;
     }
 
     .courses {
