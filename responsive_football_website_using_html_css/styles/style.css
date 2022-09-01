@@ -29,7 +29,12 @@ nav{
 
 main{
     top: 740px;
+    left: 0;
+    right: 0;
     position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #mobileMenu {
@@ -37,7 +42,9 @@ main{
 }
 
 .container{
-    width: 1161px;
+    width: 1050px;
+    display: flex;
+    align-items: center;
 }
 
 .otherLinkButton{
@@ -133,7 +140,40 @@ nav a{
     height: 438px;
 }
 
+/* main section starts */
 
+/* all the players */
+.players{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 27px 30px;
+    align-items: center;
+    justify-content: center;
+}
+.player{
+    padding: 15px;
+    width: 300px;
+    height: 474px;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+}
+
+.playerImage img{
+    width: 300px;
+    height: 256px;
+}
+
+.playerTitle{
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 40px;
+    color: #18191F;
+}
+
+.playerDetail{
+    font-size: 16px;
+    line-height: 26px;
+    color: #6C6C6C;
+}
 
 /* media queries */
 
@@ -148,6 +188,10 @@ nav a{
 
     main{
         top: 807px;
+    }
+    .container {
+        width: 100%;
+        flex-direction: column;
     }
     #deskTopTabletMenu{
         display: none;
@@ -186,6 +230,10 @@ nav a{
         width: 329px;
         height: 259px;
     }
+
+    .players{
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
 
 /* tablet devices */
@@ -197,6 +245,10 @@ nav a{
 
     main{
         top: 540px;
+    }
+
+    .container {
+        width: 700px;
     }
 
     .hero {
@@ -215,6 +267,10 @@ nav a{
         width: 329px;
         height: 259px;
     }
+
+    .players{
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 /* laptop devices or smaller desktop devices*/
@@ -226,8 +282,13 @@ nav a{
     main{
         top: 540px;
     }
+
+    .container{
+        width: 750px;
+    }
+
     .hero {
-            padding: 0 0 66px 0;
+        padding: 0 0 66px 0;
     }
     
     .container.heroSection {
@@ -244,5 +305,9 @@ nav a{
     .heroImage img {
         width: 329px;
         height: 259px;
+    }
+
+    .players{
+        grid-template-columns: repeat(2, 1fr);
     }
 }
