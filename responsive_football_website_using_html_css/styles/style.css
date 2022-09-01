@@ -120,7 +120,7 @@ nav a{
     position: absolute;
     padding: 0 0 86px 0;
 }
-.container.heroSection{
+.container.flexSection{
     width: 1150px;
     display: flex;
     justify-content: space-between;
@@ -169,10 +169,33 @@ nav a{
     color: #18191F;
 }
 
-.playerDetail{
+.detail{
     font-size: 16px;
     line-height: 26px;
     color: #6C6C6C;
+}
+
+/* section above footer */
+
+#aboveFooterSection{
+    margin-top: 165px;
+}
+
+.highlightTitle{
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 60px;
+    color: #0A0826;
+    width: 469px;
+}
+
+#hightlightDetail{
+    width: 404px;
+}
+
+.highlightImage img{
+    width: 567px;
+    height: 427px;
 }
 
 /* media queries */
@@ -211,7 +234,7 @@ nav a{
         padding: 0 0 62px 0;
     }
 
-    .container.heroSection {
+    .container.flexSection {
         width: 100%;
         flex-direction: column;
     }
@@ -234,6 +257,32 @@ nav a{
     .players{
         grid-template-columns: repeat(1, 1fr);
     }
+
+    #aboveFooterSection {
+        margin-top: 60px;
+    }
+
+    .highlightInfo{
+        width: 329px;
+    }
+
+    .highlightTitle{
+        font-size: 30px;
+        line-height: 40px;
+        width: 292px;
+    }
+
+    #hightlightDetail{
+        width: 329px;
+    }
+
+    .highlightImage{
+        margin-top: 29px;
+    }
+    .highlightImage img{
+        width: 328px;
+        height: 248px;
+    }
 }
 
 /* tablet devices */
@@ -254,7 +303,7 @@ nav a{
     .hero {
         padding: 0 0 66px 0;
     }
-    .container.heroSection {
+    .container.flexSection {
         width: 100%;
         justify-content: space-evenly;
     }
@@ -270,6 +319,26 @@ nav a{
 
     .players{
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .highlightInfo {
+        width: 329px;
+    }
+
+    .highlightTitle {
+        font-size: 36px;
+        line-height: 50px;
+        width: 278px;
+    }
+
+    #hightlightDetail {
+        width: 329px;
+    }
+    
+
+    .highlightImage img {
+        width: 329px;
+        height: 259px;
     }
 }
 
@@ -291,7 +360,7 @@ nav a{
         padding: 0 0 66px 0;
     }
     
-    .container.heroSection {
+    .container.flexSection {
         width: 100%;
         justify-content: space-evenly;
     }
@@ -309,5 +378,25 @@ nav a{
 
     .players{
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .highlightInfo {
+        width: 329px;
+    }
+    
+    .highlightTitle {
+        font-size: 36px;
+        line-height: 50px;
+        width: 278px;
+    }
+    
+    #hightlightDetail {
+        width: 329px;
+    }
+    
+    
+    .highlightImage img {
+        width: 329px;
+        height: 259px;
     }
 }
