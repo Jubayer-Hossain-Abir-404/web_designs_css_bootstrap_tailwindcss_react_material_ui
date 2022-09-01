@@ -27,7 +27,9 @@ nav{
     padding: 42px 0;
 }
 
-
+#mobileMenu {
+    display: none;
+}
 
 .container{
     width: 1161px;
@@ -123,4 +125,19 @@ nav a{
 .heroImage img{
     width: 556px;
     height: 438px;
+}
+
+
+
+/* media queries */
+
+/* mobile device */
+
+@media only screen and (max-width:668px){
+    #deskTopTabletMenu{
+        display: none;
+    }
+    #mobileMenu{
+        display: block;
+    }
 }
