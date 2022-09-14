@@ -1,0 +1,161 @@
+/* style */
+
+body{
+    width: 85%;
+    font-size: 20px;
+    font-weight: 500;
+    color: #212529;
+}
+
+main{
+    margin: 80px 0 80px 0;
+    background-color: #F6F5FA;
+}
+
+
+
+/* cart section */
+
+#cartSection{
+    height: 110vh;
+    position: relative;
+}
+
+.items{
+    position: absolute;
+    width: 100%;
+}
+.whiteDiv{
+    display: flex;
+    justify-content: space-between;
+    margin: 60px 100px -40px 100px;
+}
+
+.leftSide{
+    display: flex;
+    align-items: center;
+    width: 50%;
+    margin-right: 100px;
+}
+.productImage img{
+    width: 120px;
+    height: 140px;
+}
+
+.leftSide p{
+    margin-bottom: 0;
+    margin-left: 40px;
+}
+
+.rightSide{
+    display: flex;
+    align-items: center;
+    width: 50%;
+}
+
+.btn:focus {
+    box-shadow: 0 0 0 4px rgb(173, 216, 230);
+}
+
+
+.btn.minusButton{
+    border-radius: 5px 0 0 5px;
+    margin-right: 4px;
+}
+
+
+
+.numberInput {
+    border: none;
+    background-color: #F6F5FA;
+    resize: none;
+    outline: none;
+    width: 15%;
+    padding: 10px 10px 10px 20px;
+    border-radius: 10px;
+    font-weight: bold;
+    position: relative;
+}
+
+.numberInput:focus{
+    box-shadow: 0 0 0 4px rgb(173, 216, 230);
+}
+
+.btn.plusButton {
+    border-radius: 0 5px 5px 0;
+    margin-left: 4px;
+}
+
+.amount{
+    margin-bottom: 0;
+    margin-left: 50px;
+}
+
+.deleteProduct{
+    margin-left: 40px;
+}
+
+.deleteProduct i{
+    color: red;
+    font-size: 32px;
+    font-weight: 900;
+}
+
+.receipt p, .receiptNumber p{
+    margin-bottom: 0px;
+}
+
+.receiptNumber p{
+    text-align: right;
+}
+
+.checkoutButton{
+    display: flex;
+    justify-content: flex-end;
+    margin: 80px 100px -30px 100px;
+}
+
+.checkoutButton button{
+    color: white;
+    background-color: #2FBE70;
+    border-radius: 5px;
+    border: none;
+    padding: 10px 30px;
+}
+
+.checkoutButton button:hover{
+    background-color: #198754;
+}
+    
+
+
+
+@media only screen and (max-width:600px){
+    body{
+        width: 96%;
+    }
+    #cartSection{
+        height: 800px;
+    }
+    .whiteDiv{
+        flex-direction: column;
+        margin: 60px 0px -40px 0px;
+    }
+
+    .whiteDiv.receiptDiv{
+        flex-direction: row;
+    }
+
+    .leftSide{
+        width: 100%;
+    }
+
+    .rightSide{
+        width: 100%;
+    }
+
+    .checkoutButton{
+        margin: 80px 0 80px 0;
+    }
+
+}
