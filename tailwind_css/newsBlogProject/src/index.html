@@ -1,0 +1,811 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/dist/output.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+
+  <link href="../css/style.css" rel="stylesheet">
+  <title>NewsLog</title>
+</head>
+<body class="">
+  <!-- the topbar section -->
+  <section class="w-full sticky top-0 z-50" id="topBar">
+    <!-- start of header -->
+    <header class="bg-[#222222] w-full h-20 py-5" id="header">
+        <div class="container">
+            <div class="flex flex-col md:flex-row items-center justify-between">
+                <div class="flex items-center justify-center text-center content-center">
+                    <img class="h-full md:h-8 w-full md:w-auto" alt="govt_logo" src="../assets/logo/logo-big-ligzht.png"
+                    >
+                </div>
+    
+                <div class="hidden md:flex flex-row text-white space-x-4">
+                    <div class="hover:cursor-pointer">
+                        <i class="fa-brands fa-facebook-square"></i>
+                    </div>
+                    <div class="hover:cursor-pointer">
+                        <i class="fa-brands fa-twitter"></i>
+                    </div>
+                    <div class="hover:cursor-pointer">
+                        <i class="fa-brands fa-google-plus-g"></i>
+                    </div>
+                    <div class="hover:cursor-pointer">
+                        <i class="fa-brands fa-behance"></i>
+                    </div>
+                    <div class="hover:cursor-pointer">
+                        <i class="fa-brands fa-youtube"></i>
+                    </div>
+                    <div class="hover:cursor-pointer">
+                        <i class="fa-brands fa-instagram"></i>
+                    </div>
+                    <div class="hover:cursor-pointer">
+                        <i class="fa-solid fa-wifi"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <nav class="bg-white w-full h-14  py-0 lg:py-4 border-b drop-shadow-lg">
+        <div class="container relative">
+            <div class="flex flex-row items-center justify-between container">
+                <div class="lg:hidden block bg-[#FFFF00] p-3" id="mainMenu">
+                    <span class="text-white text-2xl cursor-pointer">
+                        <ion-icon name="menu" ></ion-icon>
+                    </span>
+                </div>
+                <div class="hidden lg:flex flex-row items-center justify-center  space-x-4 ">
+                    <div class="text-[#19191a] text-[13px] font-semibold bg-[#FFFF00]">
+                        <a href="">HOME</a>
+                    </div>
+
+                    <div class="group inline-block pb-[2px]">
+                        <button
+                          class="min-w-32"
+                        >
+                          <span class=" flex-1 text-[#19191a] text-[13px] font-semibold hover:bg-[#FFFF00]">FEATURES</span>
+                        </button>
+                        <ul
+                          class="bg-white border rounded-sm transform scale-0 group-hover:scale-100 absolute 
+                        transition duration-150 ease-in-out origin-top w-60 mt-3  border-b-[#FFFF00] border-b-2"
+                        >
+                            <li class="px-11 py-3 hover:bg-gray-300 ">
+                                <button
+                                    class="w-full text-left flex items-center outline-none focus:outline-none hover:text-[#FFFF00]"
+                                        >
+                                        <span class="flex-1">Multi Dropdown</span>
+                                </button>
+                                <ul
+                                        class="bg-white text-black  border  absolute top-0 right-0 
+                                                transition duration-150 ease-in-out origin-top-left
+                                                w-56
+                                                border-b-[#FFFF00] border-b-2"
+                                >
+                                    <li class="px-6 py-3 hover:bg-gray-300 hover:text-[#FFFF00]">Dropdown 1</li>
+                                    <li class="px-6 py-3 hover:bg-gray-300 hover:text-[#FFFF00] whitespace-nowrap">Dropdown 2</li>
+                                </ul>
+                            </li>
+                          <a href="">
+                            <li class=" px-11 py-2 hover:bg-gray-300 hover:text-[#FFFF00]">ShortCodes</li>
+                          </a>
+                          <a href="">
+                            <li class=" px-11 py-2 hover:bg-gray-300 hover:text-[#FFFF00]">Site Page</li>
+                          </a>
+                          <a href="">
+                            <li class=" px-11 py-2 hover:bg-gray-300 hover:text-[#FFFF00]">Error Page</li>
+                          </a>
+                        </ul>
+                      </div>
+                    <div class="text-[#19191a] text-[13px] font-semibold  min-w-32">
+                        <a href="" class="hover:bg-[#FFFF00]">SEO SERVICES</a>
+                    </div>
+                    <div class="text-[#19191a] text-[13px] font-semibold  min-w-32">
+                        <a href="" class="hover:bg-[#FFFF00]">DOCUMENTATION</a>
+                    </div>
+                    <div class="text-[#19191a] text-[13px] font-semibold hover:bg-[#FFFF00] min-w-32">
+                        <a href="" class="hover:bg-[#FFFF00]">DOWNLOAD THIS TEMPLATE</a>
+                    </div>
+                </div>
+                <div class="flex flex-none cursor-pointer" id="searchIcon">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+                
+                
+            </div>
+        </div>
+    </nav>
+  </section>
+  <!-- the main section and search bar -->
+  <section class="bg-white w-full">
+    <div class="container">
+        <!-- for mobile navbar -->
+        <div class="relative z-20  lg:hidden"> 
+            <div id="mobileNav" class="absolute opacity-0  left-4 transition-all ease-in duration-300">
+                <div class="text-xs  text-white h-auto bg-[#2A3744]  px-8 pt-4 ">
+                    <div class=" text-white">
+                        <div class="pt-2 pb-2 font-semibold">
+                            <a href="">FEATURES</a>
+                        </div>
+                        <div class="pl-7  text-black">
+                            <a href="">Multi DropDown</a>
+                        </div>
+                        <div class="pt-3 pl-14  text-black">
+                            <a href="">DropDown 1</a>
+                        </div>
+                        <div class="pt-3 pl-14  text-black">
+                            <a href="">DropDown 2</a>
+                        </div>
+                        <div class="pt-3 pl-7  text-black">
+                            <a href="">ShortCodes</a>
+                        </div>
+                        <div class="pt-3 pl-7  text-black">
+                            <a href="">SiteMap</a>
+                        </div>
+                        <div class="pt-3 pl-7  text-black">
+                            <a href="">Error Page</a>
+                        </div>
+                        <div class="pt-4 font-semibold">
+                            <a href="">SEO SERVICES</a>
+                        </div>
+                        <div class="pt-3 font-semibold">
+                            <a href="">DOCUMENTATION</a>
+                        </div>
+                        <div class="pt-3 pb-3 font-semibold">
+                            <a href="">DOWNLOAD THIS TEMPLATE</a>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <!-- for search input -->
+        <div class="relative z-10">
+            <div id="searchContent" class="absolute opacity-0  top-[-80px] right-0 transition-all ease-in duration-300">
+                <div class="text-white h-[70px] bg-[#2A3744] border-b-4 border-b-[#FFFF00] px-8 pt-4 flex flex-col">
+                    <div class="">
+                        <label class="relative block">
+                        
+                            <input class="placeholder:text-white block bg-[#2A3744] w-full border border-white py-2 pl-3 pr-20 shadow-sm focus:outline-none  focus:ring-1 text-xs" placeholder="Enter search term..." type="text" name="search"/>
+                            <span class="sr-only">Search</span>
+                            <span class="absolute inset-y-0 right-0 text-black flex items-center border border-white p-2 bg-[#FFFF00] text-[13px] font-semibold cursor-pointer hover:bg-[#2A3744]">
+                                SEARCH
+                            </span>
+                        </label>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        
+        <div class="pt-6">
+            <div class="flex flex-col md:flex-row space-x-0 md:space-x-4 space-y-4 md:space-y-0">
+                <div class="flex flex-none overflow-hidden group  w-full md:w-3/5 ">
+                    <div class="relative">
+                        <a class="absolute inset-0 z-10   bg-opacity-90   transform transition ease-in-out duration-1000" href="" id="">
+                            <p class="text-white  text-xl md:text-4xl  font-semibold  p-6 md:p-8 absolute bottom-0">
+                                10 steps to prepare your home for a Kitten-about Kitten care
+                            </p>
+                        </a>
+                        <a href="#" class="">
+                            <div class=" group-hover:scale-110 transform transition ease-in-out duration-500 brightness-90">
+                                <img src="../assets/main/1.jpg"  class="w-full h-full md:w-[44rem] md:h-[28rem]" id="" alt="">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                
+                
+                <div class="flex flex-col  space-y-4">
+                    <div class="overflow-hidden group flex ">
+                        <div class="relative">
+                            <a class="absolute inset-0 z-10   bg-opacity-5  transform transition ease-in-out duration-1000" href="" id="">
+                                <p class="text-white  text-xl  font-semibold  p-6 absolute bottom-0 brightness-125">
+                                    
+                                    The Best smartphones you can purchase right now in 2016
+                                </p>
+                            </a>
+                            <a href="#" class="">
+                                <div class="group-hover:scale-110 transform transition ease-in-out duration-500 brightness-50">
+                                    <img src="../assets/main/2.jpg"  class="w-full h-full md:w-[29rem] md:h-[13.5rem]" id="" alt="">
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="overflow-hidden group block ">
+                        <div class="relative">
+                            <a class="absolute inset-0 z-10   bg-opacity-90   transform transition ease-in-out duration-1000" href="" id="">
+                                <p class="text-white  text-xl  font-semibold  p-6 absolute bottom-0 brightness-125">
+                                    
+                                    Catch the travel bug and visit 100 places Before You Die
+                                </p>
+                            </a>
+                            <a href="#" class="">
+                                <div class="group-hover:scale-110 transform transition ease-in-out duration-500 brightness-50">
+                                    <img src="../assets/main/3.jpg"  class="w-full h-full md:w-[29rem] md:h-[13.5rem]" id="" alt="">
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+  </section>
+
+  <!-- the recent posts -->
+  <section class="bg-white w-full">
+    <div class="container">
+        <div class="flex leftRightFlex justify-between space-x-0">
+            <!-- the left side recent posts -->
+            <div class="flex flex-col pt-10 space-y-4">
+                <div class="bg-gray-200 px-2 py-1 w-28">
+                    <p class="text-[13px] text-[#222222] font-bold">RECENT POSTS</p>
+                </div>
+                <div class="flex flex-col space-y-10">
+                    
+                    <!-- number 1 post -->
+                    <div class="flex flex-col md:flex-row  justify-between  space-x-0 md:space-x-12 space-y-6 md:space-y-0 group">
+                        <div class="flex flex-none overflow-hidden group  ">
+                            <div class="relative">
+                                <a href="#" class="">
+                                    <div class=" group-hover:scale-110 transform transition ease-in-out duration-500 brightness-90">
+                                        <img src="../assets/recentPosts/1.jpg"  class="w-full h-full md:w-[24rem] md:h-[15rem]" id="" alt="">
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="flex flex-col">
+                            <div class="group-hover:bg-[#FFFF00] w-[95%]">
+                                <p class="text-[21px] font-bold text-[#000113] uppercase">
+                                    10 steps to prepare your home for a Kitten-about Kitten Care
+                                </p>
+                            </div>
+                            <div class="pt-2">
+                                <div class="bg-[#FFFF00] w-32 px-2">
+                                    <p class="text-[#222222] text-[12px] font-bold">AUGUST 01, 2016</p>
+                                </div>
+                            </div>
+                            
+                            <div class="pt-4 w-[90%]">
+                                <p class="font-normal text-[#5c5c63] text-[14px]">
+                                    Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo cons. Lorem Ipsum is simply dummy text of the...
+                                </p>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                    <!-- number 2 post -->
+                    <div class="flex flex-col md:flex-row  justify-between space-x-0 md:space-x-12 space-y-6 md:space-y-0 group">
+                        <div class="flex flex-none overflow-hidden group  ">
+                            <div class="relative">
+                                <a href="#" class="">
+                                    <div class=" group-hover:scale-110 transform transition ease-in-out duration-500 brightness-90">
+                                        <img src="../assets/recentPosts/2.jpg"  class="w-full h-full md:w-[24rem] md:h-[15rem]" id="" alt="">
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="flex flex-col">
+                            <div class="">
+                                <p class="text-[21px] font-bold text-[#000113] uppercase group-hover:bg-[#FFFF00]">
+                                    The Best smartphones you can purchase right now in 2016
+                                </p>
+                            </div>
+                            <div class="pt-2">
+                                <div class="bg-[#FFFF00] w-32 px-2">
+                                    <p class="text-[#222222] text-[12px] font-bold">JULY 01, 2016</p>
+                                </div>
+                            </div>
+                            
+                            <div class="pt-4 w-[90%] ">
+                                <p class="font-normal text-[#5c5c63] text-[14px]">
+                                    Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo cons. Lorem Ipsum is simply dummy text of the...   
+                                </p>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                    <!-- number 3 post -->
+                    <div class="flex flex-col md:flex-row  justify-between space-x-0 md:space-x-12 space-y-6 md:space-y-0 group">
+                        <div class="flex flex-none overflow-hidden group  ">
+                            <div class="relative">
+                                <a href="#" class="">
+                                    <div class=" group-hover:scale-110 transform transition ease-in-out duration-500 brightness-90">
+                                        <img src="../assets/recentPosts/3.jpg"  class="w-full h-full md:w-[24rem] md:h-[15rem]" id="" alt="">
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="flex flex-col">
+                            <div class="">
+                                <p class="text-[21px] font-bold text-[#000113] uppercase group-hover:bg-[#FFFF00]">
+                                    The Best smartphones you can purchase right now in 2016
+                                </p>
+                            </div>
+                            <div class="pt-2">
+                                <div class="bg-[#FFFF00] w-32 px-2">
+                                    <p class="text-[#222222] text-[12px] font-bold">JULY 01, 2016</p>
+                                </div>
+                            </div>
+                            
+                            <div class="pt-4 w-[90%] ">
+                                <p class="font-normal text-[#5c5c63] text-[14px]">
+                                    Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo cons. Lorem Ipsum is simply dummy text of the... 
+                                </p>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                    <!-- number 4 post -->
+                    <!-- <div class="flex flex-col md:flex-row  justify-between space-x-0 md:space-x-12 space-y-6 md:space-y-0 group">
+                        <div class="flex flex-none overflow-hidden group  ">
+                            <div class="relative">
+                                <a href="#" class="">
+                                    <div class=" group-hover:scale-110 transform transition ease-in-out duration-500 brightness-90">
+                                        <img src="../assets/recentPosts/4.jpg"  class="w-auto h-auto md:w-[24rem] md:h-[15rem]" id="" alt="">
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="flex flex-col">
+                            <div class="">
+                                <p class="text-[21px] font-bold text-[#000113] uppercase group-hover:bg-[#FFFF00]">
+                                    The Best smartphones you can purchase right now in 2016
+                                </p>
+                            </div>
+                            <div class="pt-2">
+                                <div class="bg-[#FFFF00] w-32 px-2">
+                                    <p class="text-[#222222] text-[12px] font-bold">JULY 01, 2016</p>
+                                </div>
+                            </div>
+                            
+                            <div class="pt-4 w-[90%] ">
+                                <p class="font-normal text-[#5c5c63] text-[14px]">
+                                    Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo cons...  
+                                </p>
+                            </div>
+                        </div>
+                        
+                    </div> -->
+
+                     <!-- number 5 post -->
+                     <div class="flex flex-col md:flex-row  justify-between space-x-0 md:space-x-12 space-y-6 md:space-y-0 group">
+                        <div class="flex flex-none overflow-hidden group  ">
+                            <div class="relative">
+                                <a href="#" class="">
+                                    <div class=" group-hover:scale-110 transform transition ease-in-out duration-500 brightness-90">
+                                        <img src="../assets/recentPosts/5.jpg"  class="w-full h-full md:w-[24rem] md:h-[15rem]" id="" alt="">
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="flex flex-col">
+                            <div class="">
+                                <p class="text-[21px] font-bold text-[#000113] uppercase group-hover:bg-[#FFFF00]">
+                                    The Best smartphones you can purchase right now in 2016
+                                </p>
+                            </div>
+                            <div class="pt-2">
+                                <div class="bg-[#FFFF00] w-32 px-2">
+                                    <p class="text-[#222222] text-[12px] font-bold">JULY 01, 2016</p>
+                                </div>
+                            </div>
+                            
+                            <div class="pt-4 w-[90%] ">
+                                <p class="font-normal text-[#5c5c63] text-[14px]">
+                                    Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo cons. Lorem Ipsum is simply dummy text of the...  
+                                </p>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                    <!-- number 6 post -->
+                    <div class="flex flex-col md:flex-row  justify-between space-x-0 md:space-x-12 space-y-6 md:space-y-0 group">
+                        <div class="flex flex-none overflow-hidden group  ">
+                            <div class="relative">
+                                <a href="#" class="">
+                                    <div class=" group-hover:scale-110 transform transition ease-in-out duration-500 brightness-90">
+                                        <img src="../assets/recentPosts/6.jpg"  class="w-full h-full md:w-[24rem] md:h-[15rem]" id="" alt="">
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="flex flex-col">
+                            <div class="">
+                                <p class="text-[21px] font-bold text-[#000113] uppercase group-hover:bg-[#FFFF00]">
+                                    The Best smartphones you can purchase right now in 2016
+                                </p>
+                            </div>
+                            <div class="pt-2">
+                                <div class="bg-[#FFFF00] w-32 px-2">
+                                    <p class="text-[#222222] text-[12px] font-bold">JULY 01, 2016</p>
+                                </div>
+                            </div>
+                            
+                            <div class="pt-4 w-[90%] ">
+                                <p class="font-normal text-[#5c5c63] text-[14px]">
+                                    Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo cons. Lorem Ipsum is simply dummy text of the...   
+                                </p>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                    <!-- number 7 post -->
+                    <div class="flex flex-col md:flex-row  justify-between space-x-0 md:space-x-12 space-y-6 md:space-y-0 group">
+                        <div class="flex flex-none overflow-hidden group  ">
+                            <div class="relative">
+                                <a href="#" class="">
+                                    <div class=" group-hover:scale-110 transform transition ease-in-out duration-500 brightness-90">
+                                        <img src="../assets/recentPosts/7.jpg"  class="w-full h-full md:w-[24rem] md:h-[15rem]" id="" alt="">
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="flex flex-col">
+                            <div class="">
+                                <p class="text-[21px] font-bold text-[#000113] uppercase group-hover:bg-[#FFFF00]">
+                                    The Best smartphones you can purchase right now in 2016
+                                </p>
+                            </div>
+                            <div class="pt-2">
+                                <div class="bg-[#FFFF00] w-32 px-2">
+                                    <p class="text-[#222222] text-[12px] font-bold">JULY 01, 2016</p>
+                                </div>
+                            </div>
+                            
+                            <div class="pt-4 w-[90%] ">
+                                <p class="font-normal text-[#5c5c63] text-[14px]">
+                                    Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo cons. Lorem Ipsum is simply dummy text of the...  
+                                </p>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                    <div class="flex flex-row gap-2  w-full flex-wrap">
+                        
+                        
+                        <a href="" class="bg-[#FFFF00] px-3 py-2 rounded-sm">
+                            <p class="text-[12px] text-[#2a3744] font-bold">1</p>
+                        </a>
+                        <a href="" class="bg-gray-200 px-3 py-2 rounded-sm hover:bg-[#FFFF00]">
+                            <p class="text-[12px] text-[#2a3744] font-bold">2</p>
+                        </a>
+                        <a href="" class="bg-gray-200 px-3 py-2 rounded-sm hover:bg-[#FFFF00]">
+                            <p class="text-[12px] text-[#2a3744] font-bold">3</p>
+                        </a>
+                        <a href="" class="bg-gray-200 px-3 py-2 rounded-sm hover:bg-[#FFFF00]">
+                            <p class="text-[12px] text-[#2a3744] font-bold">4</p>
+                        </a>
+                        <a href="" class="bg-gray-200 px-3 py-2 rounded-sm hover:bg-[#FFFF00]">
+                            <p class="text-[12px] text-[#2a3744] font-bold">NEXT</p>
+                        </a>
+                        
+                    </div>
+                </div>
+            </div>
+            <!-- the right side facebook corner -->
+            <div class="flex flex-none flex-col  pt-14  rightFlexWidth space-y-6">
+                <div class="bg-gray-200 px-2 py-2">
+                    <p class="text-[13px] text-[#222222] font-bold">FACEBOOK</p>
+                </div>
+                <div class="flex items-center justify-center">
+                    <img src="../assets/facebookSide/1.png"  class="adPhotos w-auto  h-auto" id="" alt="">
+                </div>
+                <div class="bg-gray-200 px-2 py-2">
+                    <p class="text-[13px] text-[#222222] font-bold">MOST POPULAR</p>
+                </div>
+                <!-- most popular ones -->
+                <!-- popular number 1 -->
+                <div class="flex flex-row  space-x-4">
+                    <div class="flex flex-none overflow-hidden group ">
+                        <div class="relative">
+                            <a href="#" class="">
+                                <div class=" group-hover:scale-110 transform transition ease-in-out duration-500 brightness-90">
+                                    <img src="../assets/mostPopular/1.jpg"  class="w-24 h-[4.5rem]" id="" alt="">
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div>
+                        <a href="" class="text-[16px] font-bold hover:text-[#FFFF00]">
+                            10 steps to prepare your home for a Kitten-about Kitten Care
+                        </a>
+                    </div>
+                </div>
+
+                <!-- popular number 2 -->
+                <div class="flex flex-row  space-x-4">
+                    <div class="flex flex-none overflow-hidden group ">
+                        <div class="relative">
+                            <a href="#" class="">
+                                <div class=" group-hover:scale-110 transform transition ease-in-out duration-500 brightness-90">
+                                    <img src="../assets/mostPopular/2.jpg"  class="w-24 h-[4.5rem]" id="" alt="">
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div>
+                        <a href="" class="text-[16px] font-bold hover:text-[#FFFF00]">
+                            
+                            The Best smartphones you can purchase right now in 2016
+                        </a>
+                    </div>
+                </div>
+
+                <!-- popular number 3 -->
+                <div class="flex flex-row  space-x-4">
+                    <div class="flex flex-none overflow-hidden group ">
+                        <div class="relative">
+                            <a href="#" class="">
+                                <div class=" group-hover:scale-110 transform transition ease-in-out duration-500 brightness-90">
+                                    <img src="../assets/mostPopular/3.jpg"  class="w-24 h-[4.5rem]" id="" alt="">
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div>
+                        <a href="" class="text-[16px] font-bold hover:text-[#FFFF00]">
+                            Catch the travel bug and visit 100 places Before You Die
+                        </a>
+                    </div>
+                </div>
+
+                <!-- popular number 4 -->
+                <div class="flex flex-row  space-x-4">
+                    <div class="flex flex-none overflow-hidden group ">
+                        <div class="relative">
+                            <a href="#" class="">
+                                <div class=" group-hover:scale-110 transform transition ease-in-out duration-500 brightness-90">
+                                    <img src="../assets/mostPopular/4.jpg"  class="w-24 h-[4.5rem]" id="" alt="">
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div>
+                        <a href="" class="text-[16px] font-bold hover:text-[#FFFF00]">
+                            
+                            Man in New Zealand quits his job to play Pokemon Go full-time
+                        </a>
+                    </div>
+                </div>
+
+                <div class="bg-gray-200 px-2 py-2">
+                    <p class="text-[13px] text-[#222222] font-bold">ADVERTISING</p>
+                </div>
+
+                <div class="flex items-center">
+                    <img src="../assets/advertise/1.png"  class="adPhotos w-full md:w-auto  h-auto" id="" alt="">
+                </div>
+
+                <div class="bg-gray-200 px-2 py-2">
+                    <p class="text-[13px] text-[#222222] font-bold">TAGS</p>
+                </div>
+
+                <!-- tag lists -->
+                <div class="flex flex-row gap-1  w-full flex-wrap">
+                    <a href="" class="bg-gray-200 px-2 py-2 rounded-sm">
+                        <p class="text-[11px] text-[#222222] font-bold">BREAK</p>
+                    </a>
+                    <a href="" class="bg-gray-200 px-2 py-2 rounded-sm">
+                        <p class="text-[11px] text-[#222222] font-bold">DIY</p>
+                    </a>
+                    <a href="" class="bg-gray-200 px-2 py-2 rounded-sm">
+                        <p class="text-[11px] text-[#222222] font-bold">FASHION</p>
+                    </a>
+                    <a href="" class="bg-gray-200 px-2 py-2 rounded-sm">
+                        <p class="text-[11px] text-[#222222] font-bold">FOOD</p>
+                    </a>
+                    <a href="" class="bg-gray-200 px-2 py-2 rounded-sm">
+                        <p class="text-[11px] text-[#222222] font-bold">GADGETS</p>
+                    </a>
+                    <a href="" class="bg-gray-200 px-2 py-2 rounded-sm">
+                        <p class="text-[11px] text-[#222222] font-bold">IPAD</p>
+                    </a>
+                    <a href="" class="bg-gray-200 px-2 py-2 rounded-sm">
+                        <p class="text-[11px] text-[#222222] font-bold">MOBILE</p>
+                    </a>
+                    <a href="" class="bg-gray-200 px-2 py-2 rounded-sm">
+                        <p class="text-[11px] text-[#222222] font-bold">NEWS</p>
+                    </a>
+                    <a href="" class="bg-gray-200 px-2 py-2 rounded-sm">
+                        <p class="text-[11px] text-[#222222] font-bold">SLIDER</p>
+                    </a>
+                    <a href="" class="bg-gray-200 px-2 py-2 rounded-sm">
+                        <p class="text-[11px] text-[#222222] font-bold">SPORT</p>
+                    </a>
+                    <a href="" class="bg-gray-200 px-2 py-2 rounded-sm">
+                        <p class="text-[11px] text-[#222222] font-bold">TECHNOLOGY</p>
+                    </a>
+                    <a href="" class="bg-gray-200 px-2 py-2 rounded-sm">
+                        <p class="text-[11px] text-[#222222] font-bold">TRAVEL</p>
+                    </a>
+                    <a href="" class="bg-gray-200 px-2 py-2 rounded-sm">
+                        <p class="text-[11px] text-[#222222] font-bold">VIDEO</p>
+                    </a>
+                    <a href="" class="bg-gray-200 px-2 py-2 rounded-sm">
+                        <p class="text-[11px] text-[#222222] font-bold">WATCH</p>
+                    </a>
+                </div>
+                
+                
+            </div>
+        </div>
+    </div>
+  </section>
+
+  <!-- the footer section -->
+  <footer class="w-full pt-6">
+    <div class="bg-[#222222] h-auto lg:h-[22rem] p-4 lg:p-6 text-white">
+        <div class="container flex flex-col lg:flex-row justify-start space-x-0 lg:space-x-6 lg:space-y-0 space-y-12">
+            <div class="flex flex-col gap-4 w-full lg:w-96">
+                <p class="text-[13px] font-bold ">POPULAR</p>
+
+                <hr class="-mt-2 yellowMargin" >
+
+                <div class="flex flex-col gap-4">
+                    <!-- popular number 1 -->
+                    <div class="flex flex-row  space-x-4">
+                        <div class="flex flex-none overflow-hidden group ">
+                            <div class="relative">
+                                <a href="#" class="">
+                                    <div class=" group-hover:scale-110 transform transition ease-in-out duration-500 brightness-90">
+                                        <img src="../assets/mostPopular/1.jpg"  class="w-[5.5rem] h-[4rem]" id="" alt="">
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div>
+                            <a href="" class="text-[16px] font-bold hover:text-[#FFFF00]">
+                                10 steps to prepare your home for a Kitten-about Kitten Care
+                            </a>
+                        </div>
+                    </div>
+
+                    <hr class="footerPostHR" >
+
+                    <!-- popular number 2 -->
+                    <div class="flex flex-row  space-x-4">
+                        <div class="flex flex-none overflow-hidden group ">
+                            <div class="relative">
+                                <a href="#" class="">
+                                    <div class=" group-hover:scale-110 transform transition ease-in-out duration-500 brightness-90">
+                                        <img src="../assets/mostPopular/2.jpg"  class="w-[5.5rem] h-[4rem]" id="" alt="">
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div>
+                            <a href="" class="text-[16px] font-bold hover:text-[#FFFF00]">
+                                
+                                The Best smartphones you can purchase right now in 2016
+                            </a>
+                        </div>
+                    </div>
+
+                    <hr class="footerPostHR" >
+
+                    <!-- popular number 3 -->
+                    <div class="flex flex-row  space-x-4">
+                        <div class="flex flex-none overflow-hidden group ">
+                            <div class="relative">
+                                <a href="#" class="">
+                                    <div class=" group-hover:scale-110 transform transition ease-in-out duration-500 brightness-90">
+                                        <img src="../assets/mostPopular/3.jpg"  class="w-[5.5rem] h-[4rem]" id="" alt="">
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div>
+                            <a href="" class="text-[16px] font-bold hover:text-[#FFFF00]">
+                                Catch the travel bug and visit 100 places Before You Die
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-col gap-4 w-full lg:w-96">
+                <p class="text-[13px] font-bold">BLOG ARCHIVE</p>
+                <hr class="-mt-2 yellowMargin" >
+                <div class="flex flex-col gap-[0.5px] text-[14px] font-normal">
+                    <div class="flex flex-row gap-2">
+                        <div class="cursor-pointer">
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+                        <div class="">
+                            <a href="" class="text-[#FFFF00] hover:text-[#9A2222] ">2016</a> (3)
+                        </div>
+                    </div>
+                    <div class="pl-5">
+                        <div class="flex flex-row gap-2">
+                            <div class="cursor-pointer">
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </div>
+                            <div class="">
+                                <a href="" class="text-[#FFFF00] hover:text-[#9A2222] ">August</a> (1)
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pl-10">
+                        <a href="" class="text-[#FFFF00] hover:text-[#9A2222] ">
+                            10 steps to prepare your home for a Kitten-about K...
+                        </a>
+                    </div>
+                    <div class="pl-5">
+                        <div class="flex flex-row gap-2">
+                            <div class="cursor-pointer">
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </div>
+                            <div class="">
+                                <a href="" class="text-[#FFFF00] hover:text-[#9A2222] ">July</a> (1)
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pl-5">
+                        <div class="flex flex-row gap-2">
+                            <div class="cursor-pointer">
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </div>
+                            <div class="">
+                                <a href="" class="text-[#FFFF00] hover:text-[#9A2222] ">June</a> (1)
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-row gap-2">
+                        <div class="cursor-pointer">
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+                        <div class="">
+                            <a href="" class="text-[#FFFF00] hover:text-[#9A2222] ">2015</a> (4)
+                        </div>
+                    </div>
+                    <div class="flex flex-row gap-2">
+                        <div class="cursor-pointer">
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+                        <div class="">
+                            <a href="" class="text-[#FFFF00] hover:text-[#9A2222] ">2014</a> (7)
+                        </div>
+                    </div>
+                    <div class="flex flex-row gap-2">
+                        <div class="cursor-pointer">
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+                        <div class="">
+                            <a href="" class="text-[#FFFF00] hover:text-[#9A2222] ">2013</a> (2)
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bg-[#1D1D1D] h-14">
+        <div class="container flex flex-row items-center justify-between p-4">
+            <div class="w-full md:w-auto gap-1 text-[12px] font-normal flex items-center justify-center text-center content-center">
+                <p class="text-[#bbbbbb]">CREATED BY</p>
+                <a href="" class="text-[#ffff00]">SORATEMPLATES</a>
+            </div>
+            <div class="hidden md:flex flex-row items-center justify-center text-[12px] font-normal text-[#bbbbbb] gap-1">
+                <p>TOP</p>
+                <div>
+                    <i class="fa-solid fa-chevron-up"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+  </footer>
+  
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+  <script src="./js/main.js"></script>
+</body>
+</html>

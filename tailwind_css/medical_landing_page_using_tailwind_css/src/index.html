@@ -1,0 +1,761 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/dist/output.css" rel="stylesheet">
+  <title>Medical Landing Page</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+        .darken-pseudo {
+            position: relative;
+        }
+
+      .darken-pseudo:after {
+          content: '';
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          background-color: rgba(0, 0, 0, 0.5);
+      }
+      .responsive-map{
+        overflow: hidden;
+        /* padding-bottom:20.25%; */
+        position:relative;
+        /* height:300px; */
+       }
+        .responsive-map iframe{
+            left:0;
+            top:0;
+            height:100%;
+            width:100%;
+            position:absolute;
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body class="lg:w-screen md:w-[1006px] overflow-x-hidden sm:w-screen font-Roboto">
+  <!-- navbar section -->
+  <!-- <div class="flex lg:hidden sticky inset-x-0 top-0 z-50 w-full">
+    <div class="w-full h-20 bg-white">
+        <div class="container flex flex-row">
+            <img class="h-auto w-auto" alt="logo" src="../images/logo.png"
+                >
+        </div>
+    </div>
+  </div> -->
+    
+
+    <div class="sticky top-0 w-full h-20 bg-white z-50">
+        <div class="container flex flex-row justify-between">
+            <div class="flex flex-none ">
+              <img class="h-auto w-auto" alt="logo" src="../images/logo.png"
+              >
+            </div>
+            <div class="hidden md:flex flex-row items-center md:space-x-4 lg:space-x-8 -mt-[70px]  text-sm font-semibold uppercase">
+              <a href="#home_scroll">
+                  <div class=" hover:text-red-700 font-bold text-[14px]">Home</div>
+              </a>
+              <a href="#features_scroll">
+                  <div class=" hover:text-red-700 font-bold text-[14px]">Features</div>
+              </a>
+              <a href="#services_scroll">
+                  <div class=" hover:text-red-700 font-bold text-[14px]">Services</div>
+              </a>
+              
+              <a href="#reviews_scroll">
+                  <div class=" hover:text-red-700 font-bold text-[14px]">Reviews</div>
+              </a>
+              <a href="#contact_scroll">
+                  <div class=" hover:text-red-700 font-bold text-[14px]">Contact</div>
+              </a>
+              
+              
+              <div class="flex flex-row space-x-4 items-center">
+                  <img class="h-auto w-auto" alt="logo" src="../images/phone.png"
+              >
+              <span class="cursor-pointer hover:text-red-700 font-bold text-[15px]">1800 789 123</span>
+              </div>
+            </div>
+        </div>
+    </div>
+
+      <div class="-mt-[73px] w-full h-full" style="background-color: black;" id="home_scroll">
+        <div class="bg-fixed bg-cover 
+                h-full w-screen md:w-full darken-pseudo" 
+                style="
+                background-image:url(../images/hero.jpg);
+                ">
+                <div class="relative brightness-110 container flex md:flex-row flex-col justify-between items-center py-52 z-50 md:space-y-0 space-y-20" style="z-index: 1;">
+                    <div class="flex flex-col md:w-7/12 lg:w-3/4 space-y-4">
+                        <div class="text-white font-bold lg:text-[48px] text-[35px] font-Roboto_Slab">
+                            We made your medical treatment easy
+                        </div>
+                        <div class="text-white lg:text-[18px] text-[14px] font-light w-10/12">
+                            Lorem ipsum dolor sit amet consec tetur elit amet voluptas accusamus dolorum veritatis ea odio dolor emque.
+                        </div>
+                        <div class="sm:pt-0 pt-8 flex md:flex-row flex-col items-center  space-x-0 sm:space-x-4 lg:space-x-6 md:space-y-0 space-y-16 w-auto md:w-10/12">
+                            <div class="flex flex-col space-y-4  justify-center items-center">
+                                <div class="bg-white w-24 h-24 flex items-center justify-center rounded-tr-3xl rounded-bl-3xl">
+                                    <img src="../images/scope.png" alt="scope">
+                                </div>
+                                <div class="text-white text-base font-bold w-1/2 sm:w-3/4 leading-normal font-Roboto_Slab">
+                                    Laboratory services
+                                </div>
+                            </div>
+      
+                            <div class="flex flex-col space-y-4  justify-center md:items-start items-center">
+                                <div class="bg-white w-24 h-24  flex items-center justify-center rounded-tr-3xl rounded-bl-3xl"">
+                                  <img src="../images/pancrease.png" alt="radiology">
+                                </div>
+                                <div class="text-white text-base font-bold w-3/4 sm:w-auto leading-normal sm:pl-0 pl-12 font-Roboto_Slab">
+                                    Radiology and X-ray facility
+                                </div>
+                            </div>
+      
+                            <div class="flex flex-col space-y-4 justify-center items-center">
+                                <div class="bg-white w-24 h-24 flex items-center justify-center rounded-tr-3xl rounded-bl-3xl"">
+                                  <img src="../images/ambulance_clear.png" alt="ambulance">
+                                </div>
+                                <div class="text-white text-base font-bold w-1/2  sm:w-3/4 font-Roboto_Slab">
+                                    Ambulance Services
+                                </div>
+                            </div>
+      
+                            <div class="flex flex-col space-y-4  justify-center items-center">
+                                <div class="bg-white w-24 h-24 flex items-center justify-center rounded-tr-3xl rounded-bl-3xl"">
+                                  <img src="../images/hospital_building.png" alt="ward">
+                                </div>
+                                <div class="text-white text-base font-bold w-1/2 sm:w-3/4 font-Roboto_Slab">
+                                    Ward/Indoor facility
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+        
+                    <div class="flex flex-none text-center items-center justify-center bg-white sm:w-5/12 md:w-4/12 lg:w-5/12 rounded-r-2xl rounded-b-2xl rounded-t-2xl rounded-l-2xl px-6  md:px-4 lg:px-12 pt-16 pb-20">
+                          <div class="flex flex-col flex-wrap space-y-4">
+                              <div class="font-bold text-[22px] text-center font-Roboto_Slab" style="color: #343434;">
+                                  Sydney's #1 Medical Treatment Service Center .
+                              </div>
+                              <div class="sm:px-4 md:px-2 lg:px-8">
+                                  <input class="placeholder:text-gray-700 focus:outline-none w-full border border-gray-400 rounded-full py-2 pl-3" placeholder="First Name" type="text" name="search"/> 
+                              </div>
+                              
+      
+                              <div class="sm:px-4 md:px-2 lg:px-8">
+                                  <input class="placeholder:text-gray-700 focus:outline-none w-full border border-gray-400 rounded-full py-2 pl-3" placeholder="Last Name" type="text" name="search"/> 
+                              </div>
+      
+                              <div class="sm:px-4 md:px-2 lg:px-8">
+                                  <input class="placeholder:text-gray-700 focus:outline-none w-full border border-gray-400 rounded-full py-2 pl-3" placeholder="Email" type="text" name="search"/> 
+                              </div>
+      
+                              <div class="sm:px-4 md:px-2 lg:px-8">
+                                  <input class="placeholder:text-gray-700 focus:outline-none w-full border border-gray-400 rounded-full py-2 pl-3" placeholder="Phone" type="text" name="search"/> 
+                              </div>
+      
+                              <div class="sm:px-4 md:px-2 lg:px-8">
+                                  <input class="placeholder:text-gray-700 focus:outline-none w-full border border-gray-400 rounded-full py-2 pl-3" placeholder="Website" type="text" name="search"/> 
+                              </div>
+      
+                              <div class="relative">
+                                <div class="absolute sm:px-4 md:px-2 lg:px-8 w-full">
+                                    <button class="whitespace-nowrap  w-full px-4 py-2 hover:bg-white hover:border-dotted hover:border-2 hover:border-red-600 hover:text-red-600 bg-red-600 text-white rounded-full hover:font-semibold font-semibold">
+                                        Make An Appointment
+                                    </button>
+                                </div>
+                              </div>
+                              
+                          </div>
+                    </div>
+                </div>
+        </div>
+      </div>
+      
+      <div class="pt-12 pb-10 bg-red-600">
+        <div class="flex md:flex-row flex-col items-center justify-evenly md:space-y-0 space-y-6">
+            <div class="flex flex-col items-center space-y-2">
+                <div class="text-3xl">
+                    <img class="h-full w-12" alt="logo" src="../images/man_woman.png"
+                    >
+                </div>
+                <div class="text-white text-4xl font-normal font-Roboto_Slab">
+                    5500
+                </div>
+                <div class="text-white uppercase text-[16px] font-Roboto_Slab">
+                    Healthy Clients
+                </div>
+            </div>
+            <div class="flex flex-col items-center space-y-2">
+                <div class="text-3xl">
+                    <img class="h-auto w-10" alt="logo" src="../images/human_plus.png"
+                    >
+                </div>
+                <div class="text-white text-4xl font-normal font-Roboto_Slab">
+                    85
+                </div>
+                <div class="text-white uppercase text-[16px] font-Roboto_Slab">
+                    PROFFESIONAL DOCTORS
+                </div>
+            </div>
+            <div class="flex flex-col items-center space-y-2">
+                <div class="text-3xl">
+                    <img class="h-auto w-12" alt="logo" src="../images/ambulance.png"
+                    >
+                </div>
+                <div class="text-white text-4xl font-normal font-Roboto_Slab">
+                    30
+                </div>
+                <div class="text-white uppercase text-[16px] font-Roboto_Slab">
+                    Ambulance
+                </div>
+            </div>
+            <div class="flex flex-col items-center space-y-2">
+                <div class="text-3xl md:-mt-4">
+                    <img class="h-auto w-6" alt="logo" src="../images/single_building.png"
+                    >
+                </div>
+                <div class="text-white text-4xl font-normal font-Roboto_Slab">
+                    200
+                </div>
+                <div class="text-white uppercase text-[16px] font-Roboto_Slab">
+                    Rooms
+                </div>
+            </div>
+        </div>
+      </div>
+
+
+
+<!-- features start -->
+<section class="features" id="features_scroll">
+    <div class="pt-20 flex flex-col items-center space-y-6">
+        <div class="flex uppercase text-[17px]" style="color: #676767">
+          -Features-
+        </div>
+        <div class="lg:text-4xl text-3xl font-bold lg:w-2/5 md:w-8/12 font-Roboto_Slab" style="color: #343434;">
+          <p class="text-center">Check out some of our professional
+              features!</p>
+        </div>
+  </div>
+  
+  <div class="container mt-24 flex md:flex-row flex-col items-start lg:items-center space-x-0 md:space-x-9 md:space-y-0 space-y-6">
+      <div class="flex flex-none md:w-7/12 sm:w-auto">
+          <img class="h-full w-full" alt="logo" src="../images/staff.jpg"
+                >
+      </div>
+      <div class="flex flex-none flex-col space-y-4 lg:space-y-10 relative">
+          <div class="flex flex-col space-y-2 lg:space-y-4">
+              <div class="text-[24px] font-bold md:w-8/12 lg:w-3/4 font-Roboto_Slab" style="color: #343434;">
+                  The Perfect Template For Medical.
+              </div>
+              <div class="flex flex-row space-x-3 items-center">
+                  <div>
+                      <img class="h-auto w-auto" alt="logo" src="../images/tick.png"
+                    >
+                  </div>
+                  <div class="text-[15px] font-normal" style="color:#555555;">
+                      Nunc quis justo sed odio scelerisque
+                  </div>
+              </div>
+              <div class="flex flex-row space-x-3 items-center">
+                  <div>
+                      <img class="h-auto w-auto" alt="logo" src="../images/tick.png"
+                    >
+                  </div>
+                  <div class="text-[15px] font-normal" style="color:#555555;">
+                      Duis tristique lorem non risus dignissim
+                  </div>
+              </div>
+      
+              <div class="flex flex-row space-x-3 items-center">
+                  <div>
+                      <img class="h-auto w-auto" alt="logo" src="../images/tick.png"
+                    >
+                  </div>
+                  <div class="text-[15px] font-normal" style="color:#555555;">
+                      Vivamus accumsan sem sit amet
+                  </div>
+              </div>
+      
+              <div class="flex flex-row space-x-3 items-center">
+                  <div>
+                      <img class="h-auto w-auto" alt="logo" src="../images/tick.png"
+                    >
+                  </div>
+                  <div class="text-[15px] font-normal" style="color:#555555;">
+                      Morbi sed orcia tortor bibendum finibus vitae 
+                  </div>
+              </div>
+      
+              <div class="flex flex-row space-x-3 items-center">
+                  <div>
+                      <img class="h-auto w-auto" alt="logo" src="../images/tick.png"
+                    >
+                  </div>
+                  <div class="text-[15px] font-normal" style="color:#555555;">
+                      Nam sed sem quis nisi faucibus tempor
+                  </div>
+              </div> 
+          </div>
+          <div class="relative">
+              <div class="absolute">
+                  <button class="whitespace-nowrap px-10 py-3 hover:bg-white hover:border-dotted hover:border-2 hover:border-red-600 hover:text-red-600 bg-red-600 text-white rounded-full font-semibold">
+                      Learn More
+                  </button>
+              </div>
+              
+          </div>
+      </div>
+      
+  
+      
+  </div>
+  
+  <div class="container mt-24 flex md:flex-row-reverse flex-col-reverse  items-start justify-between lg:items-center space-x-0 md:space-x-9 md:space-x-reverse md:space-y-0 md:space-y-reverse space-y-9 space-y-reverse">
+      <div class="md:pt-0 pt-9 flex-none w-full md:w-7/12 lg:w-2/3 h-full">
+          <div class="aspect-w-11 aspect-h-7">
+              <iframe src="https://www.youtube.com/embed/CJbG0TS2d2A" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+      </div>
+      <div class="flex flex-col space-y-4 lg:space-y-10 relative">
+            <div class="flex flex-col space-y-2 lg:space-y-4">
+                <div class="text-[24px] font-bold leading-normal w-auto font-Roboto_Slab" style="color: #343434;">
+                    Watch youtube video and get details of our center.
+                </div>
+                <div class="flex flex-row space-x-3 items-center">
+                    <div>
+                        <img class="h-auto w-auto" alt="logo" src="../images/tick.png"
+                      >
+                    </div>
+                    <div class="text-[15px] font-normal" style="color:#555555;">
+                        Nunc quis justo sed odio scelerisque
+                    </div>
+                </div>
+                <div class="flex flex-row space-x-3 items-center">
+                    <div>
+                        <img class="h-auto w-auto" alt="logo" src="../images/tick.png"
+                      >
+                    </div>
+                    <div class="text-[15px] font-normal" style="color:#555555;">
+                        Duis tristique lorem non risus dignissim
+                    </div>
+                </div>
+        
+                <div class="flex flex-row space-x-3 items-center">
+                    <div>
+                        <img class="h-auto w-auto" alt="logo" src="../images/tick.png"
+                      >
+                    </div>
+                    <div class="text-[15px] font-normal" style="color:#555555;">
+                        Vivamus accumsan sem sit amet
+                    </div>
+                </div>
+        
+                <div class="flex flex-row space-x-3 items-center">
+                    <div>
+                        <img class="h-auto w-auto" alt="logo" src="../images/tick.png"
+                      >
+                    </div>
+                    <div class="text-[15px] font-normal" style="color:#555555;">
+                        Morbi sed orcia tortor bibendum finibus vitae 
+                    </div>
+                </div>
+        
+                <div class="flex flex-row space-x-3 items-center">
+                    <div>
+                        <img class="h-auto w-auto" alt="logo" src="../images/tick.png"
+                      >
+                    </div>
+                    <div class="text-[15px] font-normal" style="color:#555555;">
+                        Nam sed sem quis nisi faucibus tempor
+                    </div>
+                </div> 
+            </div>
+            <div class="relative">
+                <div class="absolute">
+                    <button class="whitespace-nowrap px-10 py-3 hover:bg-white hover:border-dotted hover:border-2 hover:border-red-600 hover:text-red-600 bg-red-600 text-white rounded-full font-semibold">
+                        Learn More
+                    </button>
+                </div>
+                
+            </div>
+      </div>
+      
+      
+      
+  
+      
+  </div>
+  
+  <div class="mt-36 p-10 bg-red-600 brightness-110">
+      <div class="flex flex-col items-center space-y-4">
+          <div class="flex text-center text-white lg:text-[36px] text-[30px] font-semibold items-center justify-center font-Roboto_Slab">
+              Honesty is the best policy.
+          </div>
+          <div class="text-center text-white lg:text-[18px] text-[14px] italic">
+              We communicate honestly. No hidden fees, no surprises, no upsells! Only honest work and trustworthy staff.
+          </div>
+      </div>
+  </div>
+</section>
+
+
+
+<section style="background-color: #FAFAFA;" id="services_scroll">
+    <div class="pt-20 flex flex-col items-center space-y-4">
+        <div class="flex uppercase text-[17px]" style="color: #7F6767;">
+          - Services -
+        </div>
+        <div class="text-2xl lg:text-4xl font-semibold font-Roboto_Slab">
+          <p class="text-center">Our Medical Service</p>
+        </div>
+        <div class="text-[14px] lg:text-[17px] md:w-4/5 text-center" style="color:#676767; ">
+            We're different from typical health checkup center. We're out to create magic. The goal is to WOW you with outstanding treatment.
+        </div>
+    </div>
+
+
+    <div class="mt-20 container flex flex-col space-y-20">
+        <div class="flex md:flex-row flex-col items-center justify-center md:space-x-11 md:space-y-0 space-y-11">
+            <div class="flex flex-col items-center justify-center space-y-6">
+                <div class="flex items-center justify-center bg-white w-28 h-28 border-2 border-red-600 rounded-full">
+                    <img class="h-auto w-auto" alt="astraunaut" src="../images/astraunaut.png"
+                  >
+                </div>
+                <div class="flex items-center justify-center font-bold text-[16px] lg:text-[20px] font-Roboto_Slab" style="color: #676767;">
+                    <p class="text-center align-middle">
+                        Robotic Surgery
+                    </p>
+                </div>
+                <div class="lg:w-auto w-9/12 flex text-center items-center justify-center text-[13px] font-normal" style="color: #676767;">
+                    Lorem ipsum dolor sit amet elit convallis neque convallis est non turpis nisl ac justo rutrum sollic itudin urna interdum. 
+                </div>
+            </div>
+            <div class="flex flex-col items-center justify-center space-y-6">
+                <div class="flex items-center justify-center bg-white w-28 h-28 border-2 border-red-600 rounded-full">
+                    <img class="h-auto w-auto" alt="astraunaut" src="../images/woman.png"
+                  >
+                </div>
+                <div class="flex items-center justify-center font-bold text-[16px] lg:text-[20px] font-Roboto_Slab" style="color: #676767;">
+                    <p class="text-center align-middle">
+                        Women’s Care
+                    </p>
+                </div>
+                <div class="lg:w-auto w-9/12 flex items-center text-center justify-center text-[13px] font-normal" style="color: #676767;">
+                    Lorem ipsum dolor sit amet elit convallis neque convallis est non turpis nisl ac justo rutrum sollic itudin urna interdum. 
+                </div>
+            </div>
+            <div class="flex flex-col items-center justify-center space-y-6">
+                <div class="flex items-center justify-center bg-white w-28 h-28 border-2 border-red-600 rounded-full">
+                    <img class="h-auto w-auto" alt="astraunaut" src="../images/ear.png"
+                  >
+                </div>
+                <div class="flex items-center justify-center font-bold text-[16px] lg:text-[20px] font-Roboto_Slab" style="color: #676767;">
+                    <p class="text-center align-middle">
+                        Cancer Services
+                    </p>
+                </div>
+                <div class="lg:w-auto w-9/12 flex items-center text-center justify-center text-[13px] font-normal" style="color: #676767;">
+                    Lorem ipsum dolor sit amet elit convallis neque convallis est non turpis nisl ac justo rutrum sollic itudin urna interdum. 
+                </div>
+            </div>
+            <div class="flex flex-col items-center justify-center space-y-6">
+                <div class="flex items-center justify-center bg-white w-28 h-28 border-2 border-red-600 rounded-full">
+                    <img class="h-auto w-auto" alt="astraunaut" src="../images/medical_bag.png"
+                  >
+                </div>
+                <div class="flex items-center justify-center font-bold text-[16px] lg:text-[20px] font-Roboto_Slab" style="color: #676767;">
+                    <p class="text-center align-middle">
+                        Emergency Services
+                    </p>
+                </div>
+                <div class="lg:w-auto w-9/12 flex items-center text-center justify-center text-[13px] font-normal" style="color: #676767;">
+                    Lorem ipsum dolor sit amet elit convallis neque convallis est non turpis nisl ac justo rutrum sollic itudin urna interdum. 
+                </div>
+            </div>
+        </div>
+        <div class="flex md:flex-row flex-col items-center justify-center md:space-x-11 md:space-y-0 space-y-11">
+            <div class="flex flex-col items-center justify-center space-y-6">
+                <div class="flex items-center justify-center bg-white w-28 h-28 border-2 border-red-600 rounded-full">
+                    <img class="h-auto w-auto" alt="astraunaut" src="../images/tablet.png"
+                  >
+                </div>
+                <div class="flex items-center justify-center font-bold text-[16px] lg:text-[20px] font-Roboto_Slab" style="color: #676767;">
+                    <p class="text-center align-middle">
+                        Wellness Center
+                    </p>
+                </div>
+                <div class="lg:w-auto w-9/12 flex text-center items-center justify-center text-[13px] font-normal" style="color: #676767;">
+                    Lorem ipsum dolor sit amet elit convallis neque convallis est non turpis nisl ac justo rutrum sollic itudin urna interdum. 
+                </div>
+            </div>
+            <div class="flex flex-col items-center justify-center space-y-6">
+                <div class="flex items-center justify-center bg-white w-28 h-28 border-2 border-red-600 rounded-full">
+                    <img class="h-auto w-auto" alt="astraunaut" src="../images/hospital_single_clear.png"
+                  >
+                </div>
+                <div class="flex items-center justify-center font-bold text-[16px] lg:text-[20px] font-Roboto_Slab" style="color: #676767;">
+                    <p class="text-center align-middle  lg:whitespace-nowrap">
+                        Orthopaedic & Spine Institute
+                    </p>
+                </div>
+                <div class="lg:w-auto w-9/12 flex items-center text-center justify-center text-[13px] font-normal" style="color: #676767;">
+                    Lorem ipsum dolor sit amet elit convallis neque convallis est non turpis nisl ac justo rutrum sollic itudin urna interdum. 
+                </div>
+            </div>
+            <div class="flex flex-col items-center justify-center space-y-6">
+                <div class="flex items-center justify-center bg-white w-28 h-28 border-2 border-red-600 rounded-full">
+                    <img class="h-auto w-auto" alt="astraunaut" src="../images/brain.png"
+                  >
+                </div>
+                <div class="flex items-center justify-center font-bold text-[16px] lg:text-[20px] font-Roboto_Slab" style="color: #676767;">
+                    <p class="text-center align-middle">
+                        Brain Checkup
+                    </p>
+                </div>
+                <div class="lg:w-auto w-9/12 flex items-center text-center justify-center text-[13px] font-normal" style="color: #676767;">
+                    Lorem ipsum dolor sit amet elit convallis neque convallis est non turpis nisl ac justo rutrum sollic itudin urna interdum. 
+                </div>
+            </div>
+            <div class="flex flex-col items-center justify-center space-y-6">
+                <div class="flex items-center justify-center bg-white w-28 h-28 border-2 border-red-600 rounded-full">
+                    <img class="h-auto w-auto" alt="astraunaut" src="../images/love.png"
+                  >
+                </div>
+                <div class="flex items-center justify-center font-bold text-[16px] lg:text-[20px] font-Roboto_Slab" style="color: #676767;">
+                    <p class="text-center align-middle">
+                        Heart Care Services
+                    </p>
+                </div>
+                <div class="lg:w-auto w-9/12 flex items-center text-center justify-center text-[13px] font-normal" style="color: #676767;">
+                    Lorem ipsum dolor sit amet elit convallis neque convallis est non turpis nisl ac justo rutrum sollic itudin urna interdum. 
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="reviews_scroll">
+    <div class="pt-28 flex flex-col items-center justify-center space-y-32">
+        <div class="flex flex-col items-center space-y-4">
+            <div class="flex uppercase text-[17px]" style="color: #7F6767;">
+              - Reviews -
+            </div>
+            <div class="md:w-9/12 text-[24px] lg:text-[36px]  text-center font-bold font-Roboto_Slab" style="color:#343434; ">
+                Read what our past patients about our medical center
+            </div>
+        </div>
+    
+    
+        <div class="flex flex-col items-center justify-center space-y-14">
+            <div>
+                <img class="h-auto w-auto" alt="logo" src="../images/quote.png"
+                      >
+            </div>
+            <div class="flex w-9/12 lg:w-2/5 text-center items-center justify-center text-[14px] lg:text-[20px] italic font-normal" style="color: #676767;">
+                Medical Surgery in my opinion has to be one of the best in the area. I have never had a problem getting to see a doctor or getting through from the telephone. All the Doctors here are very good and very considerate and more importantly very efficient.
+            </div>
+            <div class="text-center italic text-[14px] lg:text-[18px] font-bold" style="color: #ed1b24;">
+                John Doe - Business Men
+            </div>
+        </div>
+    </div>
+
+    <div class="mt-24 w-full relative">
+        <div class="md:bg-fixed bg-cover 
+                md:h-40 h-52 w-full darken-pseudo" style="background-image:url(
+                ../images/pressure.jpg
+                )">
+                <div class="w-3/5 md:mx-auto mx-6 relative flex md:flex-row flex-col place-content-center justify-start justify-items-center  content-center items-center md:space-x-8 md:space-y-0 space-y-8" style="z-index: 1;">
+                    <div class="mt-12  flex items-center justify-center text-white text-[16px] lg:text-[28px] font-bold font-Roboto_Slab">
+                          Over 300+ peoples are daily visit our medical center.
+                    </div>
+                    <div class="md:pr-0 pr-[240px] flex items-center justify-center lg:justify-center relative">
+                      <div class="relative">
+                          <div class="absolute">
+                              <button class="whitespace-nowrap px-10 py-3 hover:bg-transparent hover:border-dotted hover:border-2 hover:border-red-600 hover:text-red-600 bg-red-600 text-white rounded-full font-semibold">
+                                  Learn More
+                              </button>
+                          </div>
+                      </div>
+                    </div>
+                </div>
+        </div>
+      </div>
+
+      <div class="relative mt-28 flex flex-col items-center justify-center space-y-6">
+        <div class="flex flex-col space-y-1 md:w-auto w-10/12">
+          <div class="text-[28px] lg:text-[42px] text-center font-bold flex items-center justify-center font-Roboto_Slab" style="color: #343434;">
+              Hurry up! and get
+          </div>
+          <div class="text-[28px] lg:text-[42px] text-center font-bold flex items-center justify-center font-Roboto_Slab" style="color: #343434;">
+              <p><span class="underline underline-offset-4 ">Free</span> treatment for first 50 person</p>  
+          </div>
+        </div>
+        <div class="lg:w-auto w-3/4 text-[14px] lg:text-[16px] text-center flex items-center justify-center font-normal" style="color: #676767;">
+          Limited time offer for this month. No credit card required
+        </div>
+        <div class="flex relative items-center justify-center pt-5">
+            <div class="absolute">
+              <button class="whitespace-nowrap brightness-110 lg:w-full px-14 py-2 hover:bg-white hover:border-dotted hover:border-2 hover:border-red-600 hover:text-red-600 hover:font-bold bg-red-600 text-white rounded-full font-semibold">
+                  Make An Appointment
+              </button>
+            </div>
+          
+        </div>
+  </div>
+
+  <div class="mt-32">
+    <div class="responsive-map md:h-[300px] h-[350px] w-full">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2822.7806761080233!2d-93.29138368446431!3d44.96844997909819!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x52b32b6ee2c87c91%3A0xc20dff2748d2bd92!2sWalker+Art+Center!5e0!3m2!1sen!2sus!4v1514524647889" width="100" height="100" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div>
+</div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+<div class="mt-14 container flex md:flex-row flex-col md:items-center justify-start md:space-x-20  lg:space-x-44 md:space-y-0 space-y-12">
+      <div class="flex flex-col space-y-3">
+          <div class="text-[16px] font-bold font-Roboto_Slab" style="color: #343434;">
+            CALL US
+          </div>
+          <div class="text-[14px] font-light" style="color: #676767;">
+            (080) 123 456 7890 
+          </div>
+      </div>
+      <div class="flex flex-col space-y-3">
+        <div class="text-[16px] font-bold font-Roboto_Slab" style="color: #343434;">
+            EMAIL
+        </div>
+        <div class="text-[14px] font-light" style="color: #676767;">
+            care@domain.com
+        </div>
+    </div>
+    <div class="flex flex-col space-y-3">
+        <div class="text-[16px] font-bold font-Roboto_Slab" style="color: #343434;">
+            ADDRESS
+        </div>
+        <div class="text-[14px] font-light" style="color: #676767;">
+            72, Wall street, NY 20110
+        </div>
+    </div>
+    <div class="flex flex-col space-y-3">
+        <div class="text-[16px] font-bold font-Roboto_Slab" style="color: #343434;">
+            WEBSITE
+        </div>
+        <div class="text-[14px] font-light" style="color: #676767;">
+            www.domain.com
+        </div>
+    </div>
+</div>
+
+<section id="contact_scroll">
+    <div class="pt-36 container flex md:flex-row flex-col lg:items-center justify-start md:space-x-20 lg:space-x-44 md:space-y-0 space-y-12">
+        <div class="flex flex-col flex-none space-y-4">
+            <div class="text-[16px] font-bold font-Roboto_Slab" style="color: #343434;">
+                RELATED LINKS
+            </div>
+            <div class="text-[14px] font-light" style="color: #676767;">
+                About Us
+            </div>
+            <div class="text-[14px] font-light" style="color: #676767;">
+                Why Buy With Us?
+            </div>
+            <div class="text-[14px] font-light" style="color: #676767;">
+                Our Team
+            </div>
+            <div class="text-[14px] font-light" style="color: #676767;">
+                Contact Us
+            </div>
+        </div>
+        <div class="flex flex-col flex-none space-y-4">
+            <div class="text-[16px] font-bold font-Roboto_Slab" style="color: #343434;">
+                OTHER LINKS
+            </div>
+            <div class="text-[14px] font-light" style="color: #676767;">
+                Register
+            </div>
+            <div class="text-[14px] font-light" style="color: #676767;">
+                Forum
+            </div>
+            <div class="text-[14px] font-light" style="color: #676767;">
+                Affiliate
+            </div>
+            <div class="text-[14px] font-light" style="color: #676767;">
+                FAQ
+            </div>
+        </div>
+        <div class="flex flex-col flex-none space-y-4 pr-8">
+            <div class="text-[16px] font-bold font-Roboto_Slab" style="color: #343434;">
+                RELATED LINKS
+            </div>
+            <div class="text-[14px] font-light" style="color: #676767;">
+                About Us
+            </div>
+            <div class="text-[14px] font-light" style="color: #676767;">
+                Why Buy With Us?
+            </div>
+            <div class="text-[14px] font-light" style="color: #676767;">
+                Our Team
+            </div>
+            <div class="text-[14px] font-light" style="color: #676767;">
+                Contact Us
+            </div>
+        </div>
+        <div class="flex flex-col space-y-6">
+            <div class="text-[16px] font-bold font-Roboto_Slab" style="color: #343434;">
+                ABOUT US
+            </div>
+            <div class="lg:w-auto md:w-4/5 w-auto text-[14px] font-light overflow-hidden" style="color: #676767;">
+                Mauris feugiat erat tellus.Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.
+            </div>
+            <div class="lg:w-auto md:w-3/5 w-auto pt-5">
+                <div class="flex flex-row items-center justify-between lg:space-x-0 md:space-x-2" style="color: rgb(237,27,36);">
+                    <div>
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </div>
+                    <div >
+                        <i class="fa-brands fa-twitter"></i>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-basketball"></i>
+                    </div>
+                    <div>
+                        <i class="fa-brands fa-google-plus-g"></i>
+                    </div>
+                    <div>
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </div>
+                    <div>
+                        <i class="fa-brands fa-instagram"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class=" mt-28 p-4 flex flex-col items-center text-[13px] font-normal text-white" style="background-color: #242424;">
+        © 2019. MEDILA. All rights reserved.
+    </div>
+    <div class="w-full p-2 flex flex-col items-center " style="background-color: #0098DB">
+        <img class="h-auto w-[250px] lg:w-[450px]" alt="logo" src="../images/beyond_footer.png"
+                      >
+    </div>
+</section>
+
+</body>
+</html>

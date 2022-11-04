@@ -1,0 +1,2287 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/dist/output.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+  <link href="../slick/slick.css" rel="stylesheet">
+  <link href="../slick/slick-theme.css" rel="stylesheet">
+
+  <link href="../css/style.css" rel="stylesheet">
+  <title>My Blog</title>
+</head>
+<body class="bg-white" id="wholePage">
+  <!-- the topbar and navbar -->
+  <section class="w-full bg-white h-[4.5rem] border-b shadow-md pt-3">
+    <nav class="flex container  flex-row items-center justify-between relative" id="topBarContent">
+        <div class="flex flex-row space-x-10 items-center">
+            <!-- the menu and logo part -->
+            <div class="flex flex-row space-x-6 items-center justify-between">
+                <div>
+                    <span class="cursor-pointer" id="leftBarIcon">
+                        <i class="fa-solid fa-bars"></i>
+                    </span>
+                </div> 
+                <div class="hidden lg:flex flex-none">
+                    <img class="h-full w-auto" alt="logo" src="../assets/seo/logo/1.png"
+                    >
+                </div>
+            </div>
+            <!-- the topbar menu list -->
+            <div class="hidden lg:flex  flex-row items-center justify-between space-x-8 text-[14px] text-[#131315] font-medium">
+                <div class="">
+                    <a href="">Home</a>
+                </div>
+                <!-- features -->
+                <div class="group inline-block z-20">
+                    <button
+                      class=" flex items-center"
+                    >
+                      <span class="flex-1 pr-1 ">Features</span>
+                      <span>
+                        <svg
+                          class="fill-current h-4 w-4 transform
+                          transition duration-150 ease-in-out"
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 20 20"
+                        >
+                          <path
+                            d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"
+                          />
+                        </svg>
+                      </span>
+                    </button>
+                    <ul
+                      class="bg-gray-50 border rounded-sm transform scale-0 group-hover:scale-100 absolute 
+                    transition duration-150 ease-in-out origin-top w-44 mt-6 text-[13px] text-[#131315] font-medium"
+                    >
+                      <li class="rounded-sm relative px-4 py-2  border-b">
+                        <button
+                          class="w-full text-left flex items-center outline-none focus:outline-none"
+                        >
+                          <span class="pr-1 flex-1">Multi DropDown</span>
+                          <span class="mr-auto">
+                            <svg
+                              class="fill-current h-4 w-4
+                              transition duration-150 ease-in-out"
+                              xmlns="http://www.w3.org/2000/svg"
+                              viewBox="0 0 20 20"
+                            >
+                              <path
+                                d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"
+                              />
+                            </svg>
+                          </span>
+                        </button>
+                        <ul
+                          class="-mt-[1.5px] mr-[2px] bg-gray-50  border rounded-sm absolute top-0 right-0 
+                    transition duration-150 ease-in-out origin-top-left
+                    w-44
+                    "
+                        >
+                          <a href=""><li class="px-4 py-2 border-b">DropDown 1</li></a>
+                          <a href=""><li class="px-4 py-2 border-b whitespace-nowrap">DropDown 2</li></a>
+                          <a href=""><li class="px-4 py-2 border-b">DropDown 3</li></a>
+                          
+                          
+                          
+                        </ul>
+                      </li>
+                      <a href=""><li class="px-4 py-2 border-b">ShortCodes</li></a>
+                      <a href=""><li class="px-4 py-2 border-b">SiteMap</li></a>
+                      <a href=""><li class="px-4 py-2 border-b">Error Page</li></a> 
+                    </ul>
+                </div>
+                <!-- mega menu -->
+                <div class="group inline-block z-20">
+                    <button
+                      class="outline-none focus:outline-none   rounded-sm flex items-center "
+                    >
+                      <span class="pr-1 font-semibold flex-1 ">Mega Menu</span>
+                      <span>
+                        <svg
+                          class="fill-current h-4 w-4 transform 
+                          transition duration-150 ease-in-out"
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 20 20"
+                        >
+                          <path
+                            d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"
+                          />
+                        </svg>
+                      </span>
+                    </button>
+                    <div
+                      class="bg-gray-50 border rounded-sm transform scale-0 group-hover:scale-100  absolute 
+                    transition duration-150 ease-in-out origin-top min-w-32 mt-6  left-0 w-full"
+                    >
+                      
+                      <div class="flex flex-row justify-between pt-4 pb-8 px-8 text-[13px] text-[#000000] font-semibold">
+                        <!-- megamenu first one -->
+                        <div class="flex flex-col space-y-2 w-[19%]">
+                          <div class="flex flex-none overflow-hidden group w-full">
+                            <div class="relative">
+                                <a href="#" class="">
+                                    <div class=" group-hover:scale-110 transform transition ease-in-out duration-500">
+                                        <img src="../assets/seo/megaMenu/1.jpg"  class="w-48 h-32" id="" alt="">
+                                    </div>
+                                </a>
+                            </div>
+                          </div>
+                          <div class="w-11/12">
+                            <a href="">California sheriff’s deputy shot during ‘ambush’ at police station, officials say</a>
+                          </div>
+                        </div>
+                        <!-- megamenu second one -->
+                        <div class="flex flex-col space-y-2 w-[19%]">
+                          <div class="flex flex-none overflow-hidden group ">
+                            <div class="relative">
+                                <a href="#" class="">
+                                    <div class=" group-hover:scale-110 transform transition ease-in-out duration-500">
+                                        <img src="../assets/seo/megaMenu/2.jpg"  class="w-48 h-32" id="" alt="">
+                                    </div>
+                                </a>
+                            </div>
+                          </div>
+                          <div class="w-11/12">
+                            <a href="">More than 1.5 million people sought state unemployment benefits last week even as businesses reopened</a>
+                          </div>
+                        </div>
+                        <!-- megamenu third one -->
+                        <div class="flex flex-col space-y-2 w-[19%]">
+                          <div class="flex flex-none overflow-hidden group ">
+                            <div class="relative">
+                                <a href="#" class="">
+                                    <div class=" group-hover:scale-110 transform transition ease-in-out duration-500">
+                                        <img src="../assets/seo/megaMenu/3.jpg"  class="w-48 h-32" id="" alt="">
+                                    </div>
+                                </a>
+                            </div>
+                          </div>
+                          <div class="w-11/12">
+                            <a href="">Elite B.C., Ontario crime network laundering ‘hundreds of millions’ a year, inquiry hears</a>
+                          </div>
+                        </div>
+                        <!-- megamenu fourth one -->
+                        <div class="flex flex-col space-y-2 w-[19%]">
+                          <div class="flex flex-none overflow-hidden group ">
+                            <div class="relative">
+                                <a href="#" class="">
+                                    <div class=" group-hover:scale-110 transform transition ease-in-out duration-500">
+                                        <img src="../assets/seo/megaMenu/4.jpg"  class="w-48 h-32" id="" alt="">
+                                    </div>
+                                </a>
+                            </div>
+                          </div>
+                          <div class="w-11/12">
+                            <a href="">Dwayne ‘The Rock’ Johnson confronts Donald Trump: ‘Where are you?’</a>
+                          </div>
+                        </div>
+                        <!-- megamenu fifth one -->
+                        <div class="flex flex-col space-y-2 w-[19%]">
+                          <div class="flex flex-none overflow-hidden group ">
+                            <div class="relative">
+                                <a href="#" class="">
+                                    <div class=" group-hover:scale-110 transform transition ease-in-out duration-500">
+                                        <img src="../assets/seo/megaMenu/5.jpg"  class="w-48 h-32" id="" alt="">
+                                    </div>
+                                </a>
+                            </div>
+                          </div>
+                          <div class="w-11/12">
+                            <a href="">Traveling tends to magnify all human emotions</a>
+                          </div>
+                        </div>
+                        
+                      </div>
+                    </div>
+                </div>
+                <!-- documentation -->
+                <div class="group inline-block z-20">
+                  <button
+                    class=" flex items-center"
+                  >
+                    <span class="flex-1 pr-1 ">Documentation</span>
+                    <span>
+                      <svg
+                        class="fill-current h-4 w-4 transform
+                        transition duration-150 ease-in-out"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 20 20"
+                      >
+                        <path
+                          d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"
+                        />
+                      </svg>
+                    </span>
+                  </button>
+                  <ul
+                    class="bg-gray-50 border rounded-sm transform scale-0 group-hover:scale-100 absolute 
+                  transition duration-150 ease-in-out origin-top w-44 mt-6 text-[13px] text-[#131315] font-medium"
+                  >
+                    <a href=""><li class="px-4 py-2 border-b">Web Doc</li></a>
+                    <a href=""><li class="px-4 py-2 border-b">Video Doc</li></a>
+                  </ul>
+              </div>
+                <div>
+                  <a href="">Download This Template</a>
+                </div>
+            </div>
+        </div>
+        <!-- the logo for tablet and mobile version -->
+        <div class="lg:hidden flex items-center justify-center text-center content-center">
+            <img class="h-full w-auto" alt="logo" src="../assets/seo/logo/1.png"
+                    >
+        </div>
+        <!-- the serach icon -->
+        <div class="flex flex-none cursor-pointer" id="topBarSearchIcon">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+    </nav>
+    <div id="topBarSearchContent" class="pt-1 text-black container hidden flex-row items-center justify-between space-x-6 relative transition-all ease-in duration-700">
+      <div class="w-full">
+        <label class="block">
+          <span class="sr-only">Search</span>
+          <input class="placeholder:text-slate-400 block bg-white w-full border-none  rounded-sm py-2  text-sm outline-none placeholder:text-sm" placeholder="Search this blog" type="text" name="search"/>
+        </label>
+      </div>
+      <div class="cursor-pointer" id="closeSearchIcon">
+        <i class="fa-solid fa-xmark"></i>
+      </div>
+    </div>
+  </section>
+
+  
+  <!-- for the rest of the page -->
+  <section>
+    <div class="flex flex-row">
+      <!-- for the left sidebar -->
+      <section class="relative h-screen">
+        <div class="z-20 fixed top-0 -left-96  text-white opacity-0 h-screen w-[90%] md:w-[19rem] bg-black shadow-2xl transition-all ease-in-out duration-300 delay-75" id="leftBar">
+            <nav role="navigation" class="flex flex-col">
+                <!-- the sidebar search and close icon -->
+                <div class="z-20 flex items-center justify-between gap-4 h-16 pt-6 px-6 pb-6 border-b border-b-zinc-800 shadow-md">
+                  <label class="relative block">
+                    <span class="sr-only">Search</span>
+                    <input class="placeholder:text-slate-400 block bg-white text-black w-full border border-slate-300 rounded-lg py-2 pl-3 pr-12 shadow-sm focus:outline-none focus:border-[#FFFF00] focus:ring-[#FFFF00] focus:ring-1 text-sm placeholder:text-sm" placeholder="Search" type="text" name="search"/>
+                    <span class="absolute inset-y-0 right-0 text-sm flex items-center pr-2 cursor-pointer">
+                        <ion-icon class="text-gray-600" name="search-outline"></ion-icon>
+                    </span>
+                  </label>
+
+                  <span class="cursor-pointer text-md font-extrabold" id="closeIcon">
+                    <i class="fa-solid fa-xmark"></i>
+                  </span>
+
+                </div>
+                <!-- the rest of the sidebar content -->
+                <div class="mt-2 overflow-y-auto">
+                  <div class="relative flex flex-col justify-between  h-[90.5vh]  pt-6 px-6 pb-0 lg:pb-6">
+                    <!-- now the mobile navbar menu -->
+                    <div class="flex lg:hidden flex-col space-y-4 text-[13px] text-white font-bold  ">
+                        <div class="">
+                          <a href="">HOME</a>
+                        </div>
+                        <hr style="height: 0.5px; background-color: rgba(189, 183, 183, 0.071); border: none;">
+                        <div class="flex flex-row justify-between">
+                          <p>FEATURES</p>
+                          <span class="cursor-pointer font-extrabold pr-3" onclick="mobNav('#featuresIcon', '#featuresContent');">
+                            <i class="fa-solid fa-chevron-right" id="featuresIcon"></i>
+                          </span>
+                        </div>
+                        <hr style="height: 0.5px; background-color: rgba(189, 183, 183, 0.071); border: none;">
+                        <div class="hidden flex-col space-y-4" id="featuresContent">
+                          <div class="pl-5 flex flex-row justify-between" onclick="mobNav('#multiDropdownIcon', '#multiDropdownContent');">
+                            <p class="text-gray-400">Multi Dropdown</p>
+                            <span class="cursor-pointer font-extrabold pr-3">
+                              <i class="fa-solid fa-chevron-right" id="multiDropdownIcon"></i>
+                            </span>
+                          </div>
+                          <hr style="height: 0.5px; background-color: rgba(189, 183, 183, 0.071); border: none;">
+                          <div class="hidden flex-col space-y-4  text-gray-400" id="multiDropdownContent">
+                            <div class="pl-10 ">
+                              <a href="">DropDown 1</a>
+                            </div>
+                            <hr style="height: 0.5px; background-color: rgba(189, 183, 183, 0.071); border: none;">
+                            <div class="pl-10">
+                              <a href="">DropDown 2</a>
+                            </div>
+                            <hr style="height: 0.5px; background-color: rgba(189, 183, 183, 0.071); border: none;">
+                            <div class="pl-10">
+                              <a href="">DropDown 3</a>
+                            </div>
+                            <hr style="height: 0.5px; background-color: rgba(189, 183, 183, 0.071); border: none;">
+                          </div>
+                          
+                          <div class="pl-5 text-gray-400">
+                            <a href="">ShortCodes</a>
+                          </div>
+                          <hr style="height: 0.5px; background-color: rgba(189, 183, 183, 0.071); border: none;">
+                          <div class="pl-5 text-gray-400">
+                            <a href="">SiteMap</a>
+                          </div>
+                          <hr style="height: 0.5px; background-color: rgba(189, 183, 183, 0.071); border: none;">
+                          <div class="pl-5 text-gray-400">
+                            <a href="">Error Page</a>
+                          </div>
+                          <hr style="height: 0.5px; background-color: rgba(189, 183, 183, 0.071); border: none;">
+                        </div>
+                        
+                        
+                        <div class="">
+                          <a href="">MEGA MENU</a>
+                        </div>
+                        <hr style="height: 0.5px; background-color: rgba(189, 183, 183, 0.071); border: none;">
+                        <div class="flex flex-row justify-between ">
+                          <p>DOCUMENTATION</p>
+                          <span class="cursor-pointer font-extrabold pr-3" onclick="mobNav('#documentationIcon', '#documentationContent');">
+                            <i class="fa-solid fa-chevron-right" id="documentationIcon"></i>
+                          </span>
+                        </div>
+                        <div class="hidden flex-col space-y-4 " id="documentationContent">
+                          <div class="pl-5 text-gray-400">
+                            <a href="">Web Doc</a>
+                          </div>
+                          <hr style="height: 0.5px; background-color: rgba(189, 183, 183, 0.071); border: none;">
+                          <div class=" pl-5 text-gray-400">
+                            <a href="">Video Doc</a>
+                          </div>
+                        </div>
+                        <hr style="height: 0.5px; background-color: rgba(189, 183, 183, 0.071); border: none;">
+                        <div class="">
+                          <a href="">DOWNLOAD THIS TEMPLATE</a>
+                        </div>
+                    </div>
+                    <!-- it's the editors choice -->
+                    <div class="flex-none pt-20 md:pt-0">
+                      <div class="flex flex-col gap-4">
+                        <p class="text-[#656565] text-[16px] font-bold">Editors Choice</p>
+                        <!-- 1st one -->
+                        <div class="flex flex-row items-center space-x-3">
+                          <div class="flex flex-none overflow-hidden group ">
+                              <div class="relative">
+                                  <a href="#" class="">
+                                      <div class=" group-hover:scale-110 transform transition ease-in-out duration-500">
+                                          <img src="../assets/seo/editor/1.jpg"  class="w-[5rem] h-[4rem] rounded-sm" id="" alt="">
+                                      </div>
+                                  </a>
+                              </div>
+                          </div>
+                          <div class="flex flex-col gap-1">
+                              <a href="" class="text-[14px] font-normal text-[#ffffff]">
+                                NASA Picks Moon Lander Designs by Elon Musk an...
+                              </a>
+                              <div class="flex flex-row items-center gap-1">
+                                <span class="text-sm">
+                                  <i class="fa-solid fa-calendar-days"></i>
+                                </span>
+                                <p class="text-[#aaaaaa] text-[11px] font-normal">March 17, 2016</p>
+                              </div>
+                          </div>
+                        </div>
+                        <hr style="height: 0.5px; background-color: rgba(189, 183, 183, 0.071); border: none;">
+                        <!-- 2nd one -->
+                        <div class="flex flex-row items-center space-x-3">
+                          <div class="flex flex-none overflow-hidden group ">
+                              <div class="relative">
+                                  <a href="#" class="">
+                                      <div class=" group-hover:scale-110 transform transition ease-in-out duration-500">
+                                          <img src="../assets/seo/editor/2.jpg"  class="w-[5rem] h-[4rem] rounded-sm" id="" alt="">
+                                      </div>
+                                  </a>
+                              </div>
+                          </div>
+                          <div class="flex flex-col gap-1">
+                              <a href="" class="text-[14px] font-normal text-[#ffffff]">
+                                Team Bitbose geared up to attend Blockchain...
+                              </a>
+                              <div class="flex flex-row items-center gap-1">
+                                <span class="text-sm">
+                                  <i class="fa-solid fa-calendar-days"></i>
+                                </span>
+                                <p class="text-[#aaaaaa] text-[11px] font-normal">March 17, 2016</p>
+                              </div>
+                          </div>
+                        </div>
+                        <hr style="height: 0.5px; background-color: rgba(189, 183, 183, 0.071); border: none;">
+                        <!-- third one -->
+                        <div class="flex flex-row items-center space-x-3">
+                          <div class="flex flex-none overflow-hidden group ">
+                              <div class="relative">
+                                  <a href="#" class="">
+                                      <div class=" group-hover:scale-110 transform transition ease-in-out duration-500">
+                                          <img src="../assets/seo/editor/3.jpg"  class="w-[5rem] h-[4rem] rounded-sm" id="" alt="">
+                                      </div>
+                                  </a>
+                              </div>
+                          </div>
+                          <div class="flex flex-col gap-1">
+                              <a href="" class="text-[14px] font-normal text-[#ffffff]">
+                                California sheriff’s deputy shot during ‘ambush’ at...
+                              </a>
+                              <div class="flex flex-row items-center gap-1">
+                                <span class="text-sm">
+                                  <i class="fa-solid fa-calendar-days"></i>
+                                </span>
+                                <p class="text-[#aaaaaa] text-[11px] font-normal">March 17, 2016</p>
+                              </div>
+                          </div>
+                        </div>
+                        
+
+
+                      </div>
+                    </div>
+
+                    <!-- it's the sidebar footer -->
+                    <div class="flex flex-col gap-2 flex-none pt-16 md:pt-0 pb-6 md:pb-0">
+                      <div class="flex flex-row items-center justify-start gap-4 text-sm">
+                        <a href="">
+                          <i class="fa-brands fa-facebook"></i>
+                        </a>
+                        <a href="">
+                          <i class="fa-brands fa-twitter"></i>
+                        </a>
+                        <a href="">
+                          <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="">
+                          <i class="fa-brands fa-pinterest"></i>
+                        </a>
+                        <a href="">
+                          <i class="fa-brands fa-skype"></i>
+                        </a>
+                      </div>
+                      <div class="flex flex-row items-center justify-start gap-5 text-[14px] font-normal">
+                        <a href="">
+                          <p>Home</p>
+                        </a>
+                        <a href="">
+                          <p>About</p>
+                        </a>
+                        <a href="">
+                          <p>Contact</p>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </nav>
+        </div>
+      </section>
+
+
+      <!-- the content beside sidebar -->
+      <section class="container pt-8">
+        <!-- first advertise section -->
+        <div class="py-9 flex flex-col w-full bg-[#EEEEEE] h-24 border border-slate-300">
+          <div class="flex items-center justify-center ">
+            <a href="" class="text-center italic text-[#aaaaaa] text-[13px] font-normal">Responsive Advertisement</a>
+          </div>
+        </div>
+        <!-- hero section -->
+        <div class="pt-8">
+          <div class="flex flex-col lg:flex-row justify-between gap-10">
+            <!-- first hero item -->
+            <div class="flex flex-none flex-col gap-3 w-full lg:w-[65%] group">
+              <div class="flex flex-none overflow-hidden ">
+                <div class="relative">
+                    <a href="indexSeoDetails.html" class="">
+                        <div class=" group-hover:scale-110 transform transition ease-in-out duration-500">
+                            <img src="../assets/seo/hero/1.jpg"  class="w-full lg:w-[48rem] h-auto md:h-[30rem] rounded-sm" id="" alt="">
+                        </div>
+                    </a>
+                </div>
+              </div>
+              <div class="text-[#131315] text-[13px] font-semibold">
+                <p>Beauty</p>
+              </div>
+              <div class="text-[#131315] text-[28px] font-semibold">
+                <a href="indexSeoDetails.html" >‘People Are Getting in Planes’: The Travel Business Is Picking Up</a>
+              </div>
+              <div class="text-[#656565] text-[13px] font-normal">
+                <p>15 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lore…</p>
+              </div>
+              <div class="text-[11px] text-[#afafaf] font-medium flex items-center gap-3">
+                <div class="flex gap-1">
+                  <p class="font-bold">BY</p> 
+                  <a href="indexAuthor.html">Sora Blogging Tips</a>
+                </div>
+
+                <div class="flex items-center gap-1">
+                  <span><i class="fa-solid fa-calendar-days"></i></span>
+                  <p>Friday, March 18, 2016</p>
+                </div>
+                
+                
+              </div>
+            </div>
+            <!-- the other two hero item -->
+            <div class="flex  flex-row lg:flex-col gap-4 w-full">
+              <!-- second hero item -->
+              <div class="flex flex-col gap-2 group w-1/2 lg:w-full">
+                <div class="flex flex-none overflow-hidden  ">
+                  <div class="relative">
+                      <a href="#" class="">
+                          <div class=" group-hover:scale-110 transform transition ease-in-out duration-500">
+                              <img src="../assets/seo/hero/2.jpg"  class="w-[26.5rem] h-[8rem] md:h-[14rem] rounded-sm" id="" alt="">
+                          </div>
+                      </a>
+                  </div>
+                </div>
+                <div class="text-[#131315] text-[13px] font-semibold">
+                  <p>Beauty</p>
+                </div>
+                <div class="text-[#131315] text-[16px] font-semibold hidden md:block">
+                  <a href="">After a Caribbean Hurricane, the Battle Is Where, or Even Whether, to Rebuild</a>
+                </div>
+                <div class="text-[#131315] text-[16px] font-semibold block md:hidden">
+                  <a href="">After a Caribbean Hurricane, the Battle Is Where, or Even...</a>
+                </div>
+                <div class="text-[11px] text-[#afafaf] font-normal inline-flex gap-1">
+                  <span><i class="fa-solid fa-calendar-days"></i></span>
+                  <p>Thursday, March 17, 2016</p>
+                </div>
+              </div>
+              <!-- third hero item -->
+              <div class="flex flex-col gap-2 group w-1/2 lg:w-full">
+                <div class="flex flex-none overflow-hidden  ">
+                  <div class="relative">
+                      <a href="#" class="">
+                          <div class=" group-hover:scale-110 transform transition ease-in-out duration-500">
+                              <img src="../assets/seo/hero/3.jpg"  class="w-[26.5rem] h-[8rem] md:h-[14rem] rounded-sm" id="" alt="">
+                          </div>
+                      </a>
+                  </div>
+                </div>
+                <div class="text-[#131315] text-[13px] font-semibold">
+                  <p>Beauty</p>
+                </div>
+                <div class="text-[#131315] text-[16px] font-semibold hidden md:block">
+                  <a href="">NASA Picks Moon Lander Designs by Elon Musk and Jeff Bezos Rocket Companies</a>
+                </div>
+                <div class="text-[#131315] text-[16px] font-semibold block md:hidden">
+                  <a href="">NASA Picks Moon Lander Designs by Elon Musk and Jeff...</a>
+                </div>
+                <div class="text-[11px] text-[#afafaf] font-normal inline-flex gap-1">
+                  <span><i class="fa-solid fa-calendar-days"></i></span><p>Thursday, March 17, 2016</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- second advertisement -->
+        <div class="pt-8">
+          <div class="py-9 flex flex-col w-full bg-[#EEEEEE] h-24 border border-slate-300">
+            <div class="flex items-center justify-center ">
+              <a href="" class="text-center italic text-[#aaaaaa] text-[13px] font-normal">Responsive Advertisement</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- the carousal list section -->
+        <div class="pt-8">
+          <div class="flex flex-row autoplay">
+            <!-- first slide -->
+            <div class="flex flex-col max-w-sm mx-2">
+                <div class="flex flex-none overflow-hidden  group">
+                  <div class="relative">
+                      <a href="#" class="">
+                          <div class=" group-hover:scale-110 transform transition ease-in-out duration-500">
+                              <img src="../assets/seo/carousal/1.jpg"  class="w-[23.5rem] h-[12rem] rounded-sm" id="" alt="">
+                          </div>
+                      </a>
+                  </div>
+                </div>
+                <div class="text-[#131315] text-[13px] font-semibold pt-2">
+                  <p>Fashion</p>
+                </div>
+                <div class="text-[#131315] text-[16px] font-semibold pt-2">
+                  <a href="">California sheriff’s deputy shot during ‘ambush’ at police station, officials say</a>
+                </div>
+            </div>
+            <!-- second slide -->
+            <div class="flex flex-col max-w-sm mx-2">
+              <div class="flex flex-none overflow-hidden  group">
+                <div class="relative">
+                    <a href="#" class="">
+                        <div class=" group-hover:scale-110 transform transition ease-in-out duration-500">
+                            <img src="../assets/seo/carousal/2.jpg"  class="w-[23.5rem] h-[12rem] rounded-sm" id="" alt="">
+                        </div>
+                    </a>
+                </div>
+              </div>
+              <div class="text-[#131315] text-[13px] font-semibold pt-2">
+                <p>Beauty</p>
+              </div>
+              <div class="text-[#131315] text-[16px] font-semibold pt-2">
+                <a href="">‘People Are Getting in Planes’: The Travel Business Is Picking Up</a>
+              </div>
+              
+            </div>
+            <!-- third slide -->
+            <div class="flex flex-col max-w-sm  mx-2">
+              <div class="flex flex-none overflow-hidden  group">
+                <div class="relative">
+                    <a href="#" class="">
+                        <div class=" group-hover:scale-110 transform transition ease-in-out duration-500">
+                            <img src="../assets/seo/carousal/3.jpg"  class="w-[23.5rem] h-[12rem] rounded-sm" id="" alt="">
+                        </div>
+                    </a>
+                </div>
+              </div>
+              <div class="text-[#131315] text-[13px] font-semibold pt-2">
+                <p>Business</p>
+              </div>
+              <div class="text-[#131315] text-[16px] font-semibold pt-2">
+                <a href="">Team Bitbose geared up to attend Blockchain World Conference ’18 in Atlantic City, New...</a>
+              </div>
+              
+            </div>
+
+            <!-- fourth slide -->
+            <div class="flex flex-col max-w-sm mx-2">
+              <div class="flex flex-none overflow-hidden  group">
+                <div class="relative">
+                    <a href="#" class="">
+                        <div class=" group-hover:scale-110 transform transition ease-in-out duration-500">
+                            <img src="../assets/seo/carousal/4.jpg"  class="w-[23.5rem] h-[12rem] rounded-sm" id="" alt="">
+                        </div>
+                    </a>
+                </div>
+              </div>
+              <div class="text-[#131315] text-[13px] font-semibold pt-2">
+                <p>Business</p>
+              </div>
+              <div class="text-[#131315] text-[16px] font-semibold pt-2">
+                <a href="">Team Bitbose geared up to attend Blockchain World Conference ’18 in Atlantic City, New...</a>
+              </div>
+              
+            </div>
+
+            <!-- fifth slide -->
+            <div class="flex flex-col max-w-sm mx-2">
+              <div class="flex flex-none overflow-hidden  group">
+                <div class="relative">
+                    <a href="#" class="">
+                        <div class=" group-hover:scale-110 transform transition ease-in-out duration-500">
+                            <img src="../assets/seo/carousal/5.jpg"  class="w-[23.5rem] h-[12rem] rounded-sm" id="" alt="">
+                        </div>
+                    </a>
+                </div>
+              </div>
+              <div class="text-[#131315] text-[13px] font-semibold pt-2">
+                <p>Business</p>
+              </div>
+              <div class="text-[#131315] text-[16px] font-semibold pt-2">
+                <a href="">Team Bitbose geared up to attend Blockchain World Conference ’18 in Atlantic City, New...</a>
+              </div>
+              
+            </div>
+
+            <!-- sixth slide -->
+            <div class="flex flex-col max-w-sm mx-2">
+              <div class="flex flex-none overflow-hidden  group">
+                <div class="relative">
+                    <a href="#" class="">
+                        <div class=" group-hover:scale-110 transform transition ease-in-out duration-500">
+                            <img src="../assets/seo/carousal/6.jpg"  class="w-[23.5rem] h-[12rem] rounded-sm" id="" alt="">
+                        </div>
+                    </a>
+                </div>
+              </div>
+              <div class="text-[#131315] text-[13px] font-semibold pt-2">
+                <p>Business</p>
+              </div>
+              <div class="text-[#131315] text-[16px] font-semibold pt-2">
+                <a href="">Team Bitbose geared up to attend Blockchain World Conference ’18 in Atlantic City, New...</a>
+              </div>
+              
+            </div>
+
+            <!-- seventh slide -->
+            <div class="flex flex-col max-w-sm mx-2">
+              <div class="flex flex-none overflow-hidden  group">
+                <div class="relative">
+                    <a href="#" class="">
+                        <div class=" group-hover:scale-110 transform transition ease-in-out duration-500">
+                            <img src="../assets/seo/carousal/7.jpg"  class="w-[23.5rem] h-[12rem] rounded-sm" id="" alt="">
+                        </div>
+                    </a>
+                </div>
+              </div>
+              <div class="text-[#131315] text-[13px] font-semibold pt-2">
+                <p>Business</p>
+              </div>
+              <div class="text-[#131315] text-[16px] font-semibold pt-2">
+                <a href="">Team Bitbose geared up to attend Blockchain World Conference ’18 in Atlantic City, New...</a>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+
+        <!-- now for the editors choice section and left and right side-->
+        <div class="pt-10">
+          <div class="flex flex-col lg:flex-row justify-between gap-10">
+            <!-- left side -->
+            <div class="flex flex-none flex-col gap-3 w-full lg:w-[65%]">
+              <!-- editor's choice -->
+              <div class="flex flex-row justify-between relative bg-[#131315] h-9  text-white">
+                <div class="bg-[#6FBA7B] text-[12px] font-bold px-5 pt-2">
+                  <p>EDITOR'S CHOICE</p>
+                </div>
+                <div class="bg-[#6FBA7B] text-[9px] font-bold m-2  px-2 rounded-sm flex items-center gap-1 cursor-pointer">
+                  <p>SHOW MORE</p>
+                  <span class="text-[6px]"><i class="fa-solid fa-chevron-right"></i></span>
+                </div>
+              </div>
+              <!-- editor's choice list -->
+              <div class="pt-2">
+                <div class="flex flex-col gap-6">
+                  <!-- 1st editor's choice -->
+                  <div class="flex flex-col md:flex-row justify-between gap-4 w-full">
+                      <div class="flex flex-none overflow-hidden  group">
+                        <div class="relative">
+                            <a href="#" class="">
+                                <div class=" group-hover:scale-110 transform transition ease-in-out duration-500">
+                                    <img src="../assets/seo/editorsBigChoice/1.jpg"  class="w-screen h-full md:w-[16rem] md:h-[13rem] rounded-sm" id="" alt="">
+                                </div>
+                            </a>
+                        </div>
+                      </div>
+                      <div class="flex flex-col gap-2">
+                        <div class="text-[#131315] text-[13px] font-bold inline-flex gap-1">
+                          <p class="italic text-[#6fba7b]">In</p><p>Beauty</p>
+                        </div>
+                        <div class="text-[#131315] text-[24px] font-semibold">
+                          <a href="" >NASA Picks Moon Lander Designs by Elon Musk and Jeff Bezos Rocket Companies</a>
+                        </div>
+                        <div class="text-[13px] text-[#afafaf] font-medium flex items-center gap-3">
+                          <div class="flex gap-1">
+                            <p class="font-bold text-black">BY</p> 
+                            <a href="">Sora Blogging Tips</a>
+                          </div>
+          
+                          <div class="flex items-center gap-1">
+                            <span class="text-black"><i class="fa-solid fa-calendar-days"></i></span>
+                            <p>March 17, 2016</p>
+                          </div>
+                        </div>
+                        <div class="text-[#444444] text-[13px] font-normal" style="line-height: 24px;">
+                          <p>15Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,…</p>
+                        </div>
+                        
+                      </div>
+                  </div>
+                  <!-- seconnd editor's choice -->
+                  <div class="flex flex-col md:flex-row justify-between gap-4 w-full">
+                    <div class="flex flex-none overflow-hidden  group">
+                      <div class="relative">
+                          <a href="#" class="">
+                              <div class=" group-hover:scale-110 transform transition ease-in-out duration-500">
+                                  <img src="../assets/seo/editorsBigChoice/2.jpg"  class="w-screen h-full md:w-[16rem] md:h-[13rem] rounded-sm" id="" alt="">
+                              </div>
+                          </a>
+                      </div>
+                    </div>
+                    <div class="flex flex-col gap-2">
+                      <div class="text-[#131315] text-[13px] font-bold inline-flex gap-1">
+                        <p class="italic text-[#6fba7b]">In</p><p>Business</p>
+                      </div>
+                      <div class="text-[#131315] text-[24px] font-semibold">
+                        <a href="" >Team Bitbose geared up to attend Blockchain World Conference ’18 in Atlantic City, New Jersey</a>
+                      </div>
+                      <div class="text-[13px] text-[#afafaf] font-medium flex items-center gap-3">
+                        <div class="flex gap-1">
+                          <p class="font-bold text-black">BY</p> 
+                          <a href="">Sora Blogging Tips</a>
+                        </div>
+        
+                        <div class="flex items-center gap-1">
+                          <span class="text-black"><i class="fa-solid fa-calendar-days"></i></span>
+                          <p>March 17, 2016</p>
+                        </div>
+                      </div>
+                      <div class="text-[#444444] text-[13px] font-normal" style="line-height: 24px;">
+                        <p>15Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,…</p>
+                      </div>
+                      
+                    </div>
+                </div>
+                </div>
+                <!-- third advertisement -->
+                <div class="mt-12">
+                  <div class="py-9 flex flex-col w-full bg-[#EEEEEE] h-24 border border-slate-300">
+                    <div class="flex items-center justify-center ">
+                      <a href="" class="text-center italic text-[#aaaaaa] text-[13px] font-normal">Responsive Advertisement</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- recent posts -->
+              <div class="mt-4 flex flex-row justify-between relative bg-[#131315] h-9  text-white">
+                <div class=" text-[12px] font-bold px-5 pt-2">
+                  <p>RECENT POSTS</p>
+                </div>
+                <div class="bg-[#6FBA7B] text-[9px] font-bold m-2  px-2 rounded-sm flex items-center gap-1 cursor-pointer">
+                  <p>SHOW MORE</p>
+                  <span class="text-[6px]"><i class="fa-solid fa-chevron-right"></i></span>
+                </div>
+              </div>
+
+              <div class="mt-4 flex flex-row flex-wrap w-full gap-9 justify-between">
+                <!-- 1st recent one -->
+                <div class="recentLists  bg-white  border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 h-[35rem]">
+                  <div class="flex flex-none overflow-hidden  group">
+                    <div class="relative">
+                        <a href="#" class="">
+                            <div class=" group-hover:scale-110 transform transition ease-in-out duration-500">
+                                <img src="../assets/seo/recentPosts/1.jpg"  class="recentListPhoto h-[17rem]" id="" alt="">
+                            </div>
+                        </a>
+                    </div>
+                  </div>
+                  <div class="h-[18rem] bg-[#F7F8FA] flex flex-col gap-2 p-4">
+                    <div class="text-[#131315] text-[13px] font-semibold inline-flex gap-1">
+                      <p class="italic text-[#6fba7b]">In</p><p>Beauty</p>
+                    </div>
+                    <div class="text-[#131315] text-[22px] font-semibold" style="line-height: 31px;">
+                      <a href="" >‘People Are Getting in Planes’: The Travel Business Is Picking Up</a>
+                    </div>
+                    <div class="text-[13px] text-[#afafaf] font-medium flex items-center gap-3">
+                      <div class="flex gap-1">
+                        <p class="font-bold text-black">BY</p> 
+                        <a href="">Sora Blogging Tips</a>
+                      </div>
+      
+                      <div class="flex items-center gap-1">
+                        <span class="text-black"><i class="fa-solid fa-calendar-days"></i></span>
+                        <p>Friday, March 18, 2016</p>
+                      </div>
+                    </div>
+                    <div class="text-[#656565] text-[14px] font-normal">
+                      <p>15 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's…</p>
+                    </div>
+                    <div class="text-black text-[12px] font-semibold mx-5 pt-2 lg:pt-6">
+                      <div class="px-3 py-1 inline-flex gap-1 hover:text-white hover:bg-[#6FBA7B] rounded-sm cursor-pointer">
+                        <span><i class="fa-solid fa-share"></i></span>
+                        <p>More Stories</p>
+                      </div>
+                      
+                    </div>
+                  </div>
+                </div>
+                <!-- 2nd recent one -->
+                <div class="recentLists bg-white  border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 h-[35rem]">
+                  <div class="flex flex-none overflow-hidden  group">
+                    <div class="relative">
+                        <a href="#" class="">
+                            <div class=" group-hover:scale-110 transform transition ease-in-out duration-500">
+                                <img src="../assets/seo/recentPosts/2.jpg"  class="recentListPhoto h-[17rem]" id="" alt="">
+                            </div>
+                        </a>
+                    </div>
+                  </div>
+                  <div class="h-[18rem] bg-[#F7F8FA] flex flex-col gap-2 p-4">
+                    <div class="text-[#131315] text-[13px] font-semibold inline-flex gap-1">
+                      <p class="italic text-[#6fba7b]">In</p><p>Beauty</p>
+                    </div>
+                    <div class="text-[#131315] text-[22px] font-semibold" style="line-height: 31px;">
+                      <a href="" >‘People Are Getting in Planes’: The Travel Business Is Picking Up</a>
+                    </div>
+                    <div class="text-[13px] text-[#afafaf] font-medium flex items-center gap-3">
+                      <div class="flex gap-1">
+                        <p class="font-bold text-black">BY</p> 
+                        <a href="">Sora Blogging Tips</a>
+                      </div>
+      
+                      <div class="flex items-center gap-1">
+                        <span class="text-black"><i class="fa-solid fa-calendar-days"></i></span>
+                        <p>Friday, March 18, 2016</p>
+                      </div>
+                    </div>
+                    <div class="text-[#656565] text-[14px] font-normal">
+                      <p>15 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's…</p>
+                    </div>
+                    <div class="text-black text-[12px] font-semibold mx-5 pt-2 lg:pt-6">
+                      <div class="px-3 py-1 inline-flex gap-1 hover:text-white hover:bg-[#6FBA7B] rounded-sm cursor-pointer">
+                        <span><i class="fa-solid fa-share"></i></span>
+                        <p>More Stories</p>
+                      </div>
+                      
+                    </div>
+                  </div>
+                </div>
+                <!-- third recent one -->
+                <div class="recentLists bg-white  border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 h-[35rem]">
+                  <div class="flex flex-none overflow-hidden  group">
+                    <div class="relative">
+                        <a href="#" class="">
+                            <div class=" group-hover:scale-110 transform transition ease-in-out duration-500">
+                                <img src="../assets/seo/recentPosts/3.jpg"  class="recentListPhoto h-[17rem]" id="" alt="">
+                            </div>
+                        </a>
+                    </div>
+                  </div>
+                  <div class="h-[18rem] bg-[#F7F8FA] flex flex-col gap-2 p-4">
+                    <div class="text-[#131315] text-[13px] font-semibold inline-flex gap-1">
+                      <p class="italic text-[#6fba7b]">In</p><p>Beauty</p>
+                    </div>
+                    <div class="text-[#131315] text-[22px] font-semibold" style="line-height: 31px;">
+                      <a href="" >‘People Are Getting in Planes’: The Travel Business Is Picking Up</a>
+                    </div>
+                    <div class="text-[13px] text-[#afafaf] font-medium flex items-center gap-3">
+                      <div class="flex gap-1">
+                        <p class="font-bold text-black">BY</p> 
+                        <a href="">Sora Blogging Tips</a>
+                      </div>
+      
+                      <div class="flex items-center gap-1">
+                        <span class="text-black"><i class="fa-solid fa-calendar-days"></i></span>
+                        <p>Friday, March 18, 2016</p>
+                      </div>
+                    </div>
+                    <div class="text-[#656565] text-[14px] font-normal">
+                      <p>15 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's…</p>
+                    </div>
+                    <div class="text-black text-[12px] font-semibold mx-5 pt-2 lg:pt-6">
+                      <div class="px-3 py-1 inline-flex gap-1 hover:text-white hover:bg-[#6FBA7B] rounded-sm cursor-pointer">
+                        <span><i class="fa-solid fa-share"></i></span>
+                        <p>More Stories</p>
+                      </div>
+                      
+                    </div>
+                  </div>
+                </div>
+                <!-- fourth recent one -->
+                <div class="recentLists bg-white  border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 h-[35rem]">
+                  <div class="flex flex-none overflow-hidden  group">
+                    <div class="relative">
+                        <a href="#" class="">
+                            <div class=" group-hover:scale-110 transform transition ease-in-out duration-500">
+                                <img src="../assets/seo/recentPosts/4.jpg"  class="recentListPhoto h-[17rem]" id="" alt="">
+                            </div>
+                        </a>
+                    </div>
+                  </div>
+                  <div class="h-[18rem] bg-[#F7F8FA] flex flex-col gap-2 p-4">
+                    <div class="text-[#131315] text-[13px] font-semibold inline-flex gap-1">
+                      <p class="italic text-[#6fba7b]">In</p><p>Beauty</p>
+                    </div>
+                    <div class="text-[#131315] text-[22px] font-semibold" style="line-height: 31px;">
+                      <a href="" >‘People Are Getting in Planes’: The Travel Business Is Picking Up</a>
+                    </div>
+                    <div class="text-[13px] text-[#afafaf] font-medium flex items-center gap-3">
+                      <div class="flex gap-1">
+                        <p class="font-bold text-black">BY</p> 
+                        <a href="">Sora Blogging Tips</a>
+                      </div>
+      
+                      <div class="flex items-center gap-1">
+                        <span class="text-black"><i class="fa-solid fa-calendar-days"></i></span>
+                        <p>Friday, March 18, 2016</p>
+                      </div>
+                    </div>
+                    <div class="text-[#656565] text-[14px] font-normal">
+                      <p>15 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's…</p>
+                    </div>
+                    <div class="text-black text-[12px] font-semibold mx-5 pt-2 lg:pt-6">
+                      <div class="px-3 py-1 inline-flex gap-1 hover:text-white hover:bg-[#6FBA7B] rounded-sm cursor-pointer">
+                        <span><i class="fa-solid fa-share"></i></span>
+                        <p>More Stories</p>
+                      </div>
+                      
+                    </div>
+                  </div>
+                </div>
+                <!-- fifth recent one -->
+                <div class="recentLists bg-white  border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 h-[35rem]">
+                  <div class="flex flex-none overflow-hidden  group">
+                    <div class="relative">
+                        <a href="#" class="">
+                            <div class=" group-hover:scale-110 transform transition ease-in-out duration-500">
+                                <img src="../assets/seo/recentPosts/5.jpg"  class="recentListPhoto h-[17rem]" id="" alt="">
+                            </div>
+                        </a>
+                    </div>
+                  </div>
+                  <div class="h-[18rem] bg-[#F7F8FA] flex flex-col gap-2 p-4">
+                    <div class="text-[#131315] text-[13px] font-semibold inline-flex gap-1">
+                      <p class="italic text-[#6fba7b]">In</p><p>Beauty</p>
+                    </div>
+                    <div class="text-[#131315] text-[22px] font-semibold" style="line-height: 31px;">
+                      <a href="" >‘People Are Getting in Planes’: The Travel Business Is Picking Up</a>
+                    </div>
+                    <div class="text-[13px] text-[#afafaf] font-medium flex items-center gap-3">
+                      <div class="flex gap-1">
+                        <p class="font-bold text-black">BY</p> 
+                        <a href="">Sora Blogging Tips</a>
+                      </div>
+      
+                      <div class="flex items-center gap-1">
+                        <span class="text-black"><i class="fa-solid fa-calendar-days"></i></span>
+                        <p>Friday, March 18, 2016</p>
+                      </div>
+                    </div>
+                    <div class="text-[#656565] text-[14px] font-normal">
+                      <p>15 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's…</p>
+                    </div>
+                    <div class="text-black text-[12px] font-semibold mx-5 pt-2 lg:pt-6">
+                      <div class="px-3 py-1 inline-flex gap-1 hover:text-white hover:bg-[#6FBA7B] rounded-sm cursor-pointer">
+                        <span><i class="fa-solid fa-share"></i></span>
+                        <p>More Stories</p>
+                      </div>
+                      
+                    </div>
+                  </div>
+                </div>
+                <!-- sixth recent one -->
+                <div class="recentLists bg-white  border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 h-[35rem]">
+                  <div class="flex flex-none overflow-hidden  group">
+                    <div class="relative">
+                        <a href="#" class="">
+                            <div class=" group-hover:scale-110 transform transition ease-in-out duration-500">
+                                <img src="../assets/seo/recentPosts/6.jpg"  class="recentListPhoto h-[17rem]" id="" alt="">
+                            </div>
+                        </a>
+                    </div>
+                  </div>
+                  <div class="h-[18rem] bg-[#F7F8FA] flex flex-col gap-2 p-4">
+                    <div class="text-[#131315] text-[13px] font-semibold inline-flex gap-1">
+                      <p class="italic text-[#6fba7b]">In</p><p>Beauty</p>
+                    </div>
+                    <div class="text-[#131315] text-[22px] font-semibold" style="line-height: 31px;">
+                      <a href="" >‘People Are Getting in Planes’: The Travel Business Is Picking Up</a>
+                    </div>
+                    <div class="text-[13px] text-[#afafaf] font-medium flex items-center gap-3">
+                      <div class="flex gap-1">
+                        <p class="font-bold text-black">BY</p> 
+                        <a href="">Sora Blogging Tips</a>
+                      </div>
+      
+                      <div class="flex items-center gap-1">
+                        <span class="text-black"><i class="fa-solid fa-calendar-days"></i></span>
+                        <p>Friday, March 18, 2016</p>
+                      </div>
+                    </div>
+                    <div class="text-[#656565] text-[14px] font-normal">
+                      <p>15 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's…</p>
+                    </div>
+                    <div class="text-black text-[12px] font-semibold mx-5 pt-2 lg:pt-6">
+                      <div class="px-3 py-1 inline-flex gap-1 hover:text-white hover:bg-[#6FBA7B] rounded-sm cursor-pointer">
+                        <span><i class="fa-solid fa-share"></i></span>
+                        <p>More Stories</p>
+                      </div>
+                      
+                    </div>
+                  </div>
+                </div>
+                <!-- seventh recent one -->
+                <div class="recentLists bg-white  border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 h-[35rem]">
+                  <div class="flex flex-none overflow-hidden  group">
+                    <div class="relative">
+                        <a href="#" class="">
+                            <div class=" group-hover:scale-110 transform transition ease-in-out duration-500">
+                                <img src="../assets/seo/recentPosts/7.jpg"  class="recentListPhoto h-[17rem]" id="" alt="">
+                            </div>
+                        </a>
+                    </div>
+                  </div>
+                  <div class="h-[18rem] bg-[#F7F8FA] flex flex-col gap-2 p-4">
+                    <div class="text-[#131315] text-[13px] font-semibold inline-flex gap-1">
+                      <p class="italic text-[#6fba7b]">In</p><p>Beauty</p>
+                    </div>
+                    <div class="text-[#131315] text-[22px] font-semibold" style="line-height: 31px;">
+                      <a href="" >‘People Are Getting in Planes’: The Travel Business Is Picking Up</a>
+                    </div>
+                    <div class="text-[13px] text-[#afafaf] font-medium flex items-center gap-3">
+                      <div class="flex gap-1">
+                        <p class="font-bold text-black">BY</p> 
+                        <a href="">Sora Blogging Tips</a>
+                      </div>
+      
+                      <div class="flex items-center gap-1">
+                        <span class="text-black"><i class="fa-solid fa-calendar-days"></i></span>
+                        <p>Friday, March 18, 2016</p>
+                      </div>
+                    </div>
+                    <div class="text-[#656565] text-[14px] font-normal">
+                      <p>15 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's…</p>
+                    </div>
+                    <div class="text-black text-[12px] font-semibold mx-5 pt-2 lg:pt-6">
+                      <div class="px-3 py-1 inline-flex gap-1 hover:text-white hover:bg-[#6FBA7B] rounded-sm cursor-pointer">
+                        <span><i class="fa-solid fa-share"></i></span>
+                        <p>More Stories</p>
+                      </div>
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="mt-6 flex items-center justify-center">
+                <button class="bg-[#6FBA7B] text-white px-8 py-2 text-[14px] rounded-sm border-2">Load More</button>
+              </div>
+            </div>
+            <!-- right side -->
+            <div class="flex  flex-col gap-4 ">
+              <!-- most popular -->
+              <div class="flex flex-row justify-center relative bg-[#131315] h-9  text-white">
+                <div class="text-[13px] font-bold px-5 pt-2">
+                  <p>MOST POPULAR</p>
+                </div>
+              </div>
+              <!-- 1st popular list -->
+              <div class="flex flex-row items-center  gap-4 w-full">
+                <div class="flex flex-none overflow-hidden  group">
+                  <div class="relative">
+                      <a href="#" class="">
+                          <div class=" group-hover:scale-110 transform transition ease-in-out duration-500">
+                              <img src="../assets/seo/popular/1.jpg"  class="w-[4.5rem] h-[4rem] rounded-sm" id="" alt="">
+                          </div>
+                      </a>
+                  </div>
+                </div>
+                <div class="flex flex-col gap-1"> 
+                  <div class="text-[#131315] text-[15px] font-normal" style="line-height: 23px;">
+                    <a href="" >‘People Are Getting in Planes’: The Travel Business Is Picking Up</a>
+                  </div>
+                  <div class="text-[13px] text-[#afafaf] font-medium flex items-center gap-3">
+                    <div class="flex items-center gap-1 text-[11px] text-[#aaaaaa]">
+                      <span class="text-black"><i class="fa-solid fa-calendar-days"></i></span>
+                      <p>Friday, March 18, 2016</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <hr style="height: 0.5px; background-color: rgb(238, 238, 238); border: none;">
+
+              <!-- 2nd popular list -->
+              <div class="flex flex-row items-center  gap-4 w-full">
+                <div class="flex flex-none overflow-hidden  group">
+                  <div class="relative">
+                      <a href="#" class="">
+                          <div class=" group-hover:scale-110 transform transition ease-in-out duration-500">
+                              <img src="../assets/seo/popular/2.jpg"  class="w-[4.5rem] h-[4rem] rounded-sm" id="" alt="">
+                          </div>
+                      </a>
+                  </div>
+                </div>
+                <div class="flex flex-col gap-1"> 
+                  <div class="text-[#131315] text-[15px] font-normal" style="line-height: 23px;">
+                    <a href="" >‘People Are Getting in Planes’: The Travel Business Is Picking Up</a>
+                  </div>
+                  <div class="text-[13px] text-[#afafaf] font-medium flex items-center gap-3">
+                    <div class="flex items-center gap-1 text-[11px] text-[#aaaaaa]">
+                      <span class="text-black"><i class="fa-solid fa-calendar-days"></i></span>
+                      <p>Friday, March 18, 2016</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <hr style="height: 0.5px; background-color: rgb(238, 238, 238); border: none;">
+
+              <!-- 3rd popular list -->
+              <div class="flex flex-row items-center  gap-4 w-full">
+                <div class="flex flex-none overflow-hidden  group">
+                  <div class="relative">
+                      <a href="#" class="">
+                          <div class=" group-hover:scale-110 transform transition ease-in-out duration-500">
+                              <img src="../assets/seo/popular/3.jpg"  class="w-[4.5rem] h-[4rem] rounded-sm" id="" alt="">
+                          </div>
+                      </a>
+                  </div>
+                </div>
+                <div class="flex flex-col gap-1"> 
+                  <div class="text-[#131315] text-[15px] font-normal" style="line-height: 23px;">
+                    <a href="" >‘People Are Getting in Planes’: The Travel Business Is Picking Up</a>
+                  </div>
+                  <div class="text-[13px] text-[#afafaf] font-medium flex items-center gap-3">
+                    <div class="flex items-center gap-1 text-[11px] text-[#aaaaaa]">
+                      <span class="text-black"><i class="fa-solid fa-calendar-days"></i></span>
+                      <p>Friday, March 18, 2016</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <hr style="height: 0.5px; background-color: rgb(238, 238, 238); border: none;">
+
+              <!-- 4th popular list -->
+
+              <div class="flex flex-row items-center  gap-4 w-full">
+                <div class="flex flex-none overflow-hidden  group">
+                  <div class="relative">
+                      <a href="#" class="">
+                          <div class=" group-hover:scale-110 transform transition ease-in-out duration-500">
+                              <img src="../assets/seo/popular/4.jpg"  class="w-[4.5rem] h-[4rem] rounded-sm" id="" alt="">
+                          </div>
+                      </a>
+                  </div>
+                </div>
+                <div class="flex flex-col gap-1"> 
+                  <div class="text-[#131315] text-[15px] font-normal" style="line-height: 23px;">
+                    <a href="" >‘People Are Getting in Planes’: The Travel Business Is Picking Up</a>
+                  </div>
+                  <div class="text-[13px] text-[#afafaf] font-medium flex items-center gap-3">
+                    <div class="flex items-center gap-1 text-[11px] text-[#aaaaaa]">
+                      <span class="text-black"><i class="fa-solid fa-calendar-days"></i></span>
+                      <p>Friday, March 18, 2016</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- social plugin -->
+              <div class="mt-8 flex flex-row justify-center relative bg-[#131315] h-9  text-white">
+                <div class="text-[13px] font-bold px-5 pt-2">
+                  <p>SOCIAL PLUGIN</p>
+                </div>
+              </div>
+              <!-- social media links -->
+              <div class="flex flex-col gap-2">
+                <!-- 1st list for social media -->
+                <div class="flex flex-row  justify-between">
+                  <div class="bg-[#3B5999] py-[2px] px-4 md:px-[52px] lg:px-[15.5px] rounded-sm">
+                    <span class="text-white text-[25px]">
+                      <i class="fa-brands fa-facebook"></i>
+                    </span>
+                  </div>
+                  <div class="bg-[#00ACEE] py-[2px] px-4 md:px-[52px] lg:px-[15.5px] rounded-sm">
+                    <span class="text-white text-[25px]">
+                      <i class="fa-brands fa-twitter"></i>
+                    </span>
+                  </div>
+                  <div class="bg-[#0077B5] py-[2px] px-[19px] md:px-[55px] lg:px-[15.5px] rounded-sm">
+                    <span class="text-white text-[25px]">
+                      <i class="fa-brands fa-linkedin-in"></i>
+                    </span>
+                  </div>
+
+                  <div class="bg-[#FF4500] py-[2px] px-4 md:px-[52px] lg:px-[15.5px] rounded-sm">
+                    <span class="text-white text-[25px]">
+                      <i class="fa-brands fa-reddit"></i>
+                    </span>
+                  </div>
+
+                  <div class="bg-[#CA2127] py-[2px] px-4 md:px-[52px] lg:px-[15.5px] rounded-sm">
+                    <span class="text-white text-[25px]">
+                      <i class="fa-brands fa-pinterest"></i>
+                    </span>
+                  </div>
+
+                </div>
+                <!-- 2nd list for social media -->
+                <div class="flex flex-row justify-between">
+                  <div class="bg-[#4A76A8] py-[1px] px-4 md:px-[52px] lg:px-[15.5px] rounded-sm">
+                    <span class="text-white text-[28.5px]">
+                      <i class="fa-brands fa-vk"></i>
+                    </span>
+                  </div>
+
+                  <div class="bg-[#A042A3] py-[1px] px-4 md:px-[52px] lg:px-[15.5px] rounded-sm">
+                    <span class="text-white text-[27.5px]">
+                      <i class="fa-brands fa-instagram"></i>
+                    </span>
+                  </div>
+
+                  <div class="bg-[#DB4A39] py-[1px] px-4 md:px-[52px] lg:px-[12.4px] rounded-sm">
+                    <span class="text-white text-[25px]">
+                      <i class="fa-brands fa-youtube"></i>
+                    </span>
+                  </div>
+
+                  <div class="bg-[#3FBB50] py-[1px] px-4 md:px-[52px] lg:px-[15.5px] rounded-sm">
+                    <span class="text-white text-[28px]">
+                      <i class="fa-brands fa-whatsapp"></i>
+                    </span>
+                  </div>
+
+                  <div class="bg-[#00AFF0] py-[1px] px-4 md:px-[52px] lg:px-[15.5px] rounded-sm">
+                    <span class="text-white text-[27.5px]">
+                      <i class="fa-brands fa-skype"></i>
+                    </span>
+                  </div>
+
+                </div>
+              </div>
+              <!-- social medial lists -->
+              <div class="pt-6 flex flex-col gap-4">
+                <!-- social media 1st list -->
+                <div class="flex flex-row items-center  gap-4 w-full">
+                  <div class="flex flex-none overflow-hidden  group">
+                    <div class="relative">
+                        <a href="#" class="">
+                            <div class=" group-hover:scale-110 transform transition ease-in-out duration-500">
+                                <img src="../assets/seo/popular/1.jpg"  class="w-[4.5rem] h-[4rem] rounded-sm" id="" alt="">
+                            </div>
+                        </a>
+                    </div>
+                  </div>
+                  <div class="flex flex-col gap-1"> 
+                    <div class="text-[#131315] text-[15px] font-normal" style="line-height: 23px;">
+                      <a href="" >‘People Are Getting in Planes’: The Travel Business Is Picking Up</a>
+                    </div>
+                    <div class="text-[13px] text-[#afafaf] font-medium flex items-center gap-3">
+                      <div class="flex items-center gap-1 text-[11px] text-[#aaaaaa]">
+                        <span class="text-black"><i class="fa-solid fa-calendar-days"></i></span>
+                        <p>Friday, March 18, 2016</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <hr style="height: 0.5px; background-color: rgb(238, 238, 238); border: none;">
+
+                <!-- social media 2nd list -->
+                <div class="flex flex-row items-center  gap-4 w-full">
+                  <div class="flex flex-none overflow-hidden  group">
+                    <div class="relative">
+                        <a href="#" class="">
+                            <div class=" group-hover:scale-110 transform transition ease-in-out duration-500">
+                                <img src="../assets/seo/popular/2.jpg"  class="w-[4.5rem] h-[4rem] rounded-sm" id="" alt="">
+                            </div>
+                        </a>
+                    </div>
+                  </div>
+                  <div class="flex flex-col gap-1"> 
+                    <div class="text-[#131315] text-[15px] font-normal" style="line-height: 23px;">
+                      <a href="" >‘People Are Getting in Planes’: The Travel Business Is Picking Up</a>
+                    </div>
+                    <div class="text-[13px] text-[#afafaf] font-medium flex items-center gap-3">
+                      <div class="flex items-center gap-1 text-[11px] text-[#aaaaaa]">
+                        <span class="text-black"><i class="fa-solid fa-calendar-days"></i></span>
+                        <p>Friday, March 18, 2016</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <hr style="height: 0.5px; background-color: rgb(238, 238, 238); border: none;">
+
+                <!-- social media 3rd list -->
+                <div class="flex flex-row items-center  gap-4 w-full">
+                  <div class="flex flex-none overflow-hidden  group">
+                    <div class="relative">
+                        <a href="#" class="">
+                            <div class=" group-hover:scale-110 transform transition ease-in-out duration-500">
+                                <img src="../assets/seo/popular/3.jpg"  class="w-[4.5rem] h-[4rem] rounded-sm" id="" alt="">
+                            </div>
+                        </a>
+                    </div>
+                  </div>
+                  <div class="flex flex-col gap-1"> 
+                    <div class="text-[#131315] text-[15px] font-normal" style="line-height: 23px;">
+                      <a href="" >‘People Are Getting in Planes’: The Travel Business Is Picking Up</a>
+                    </div>
+                    <div class="text-[13px] text-[#afafaf] font-medium flex items-center gap-3">
+                      <div class="flex items-center gap-1 text-[11px] text-[#aaaaaa]">
+                        <span class="text-black"><i class="fa-solid fa-calendar-days"></i></span>
+                        <p>Friday, March 18, 2016</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- subscribe us -->
+
+              <div class="mt-8 flex flex-row justify-center relative bg-[#131315] h-9  text-white">
+                <div class="text-[13px] font-bold px-5 pt-2">
+                  <p>SUBSCRIBE US</p>
+                </div>
+              </div>
+              <!-- youtube video -->
+              <div class="aspect-w-11 aspect-h-7">
+                <iframe src="https://www.youtube.com/embed/jh7036ygLak" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+
+              <!-- facebook -->
+              <div class="mt-10 flex flex-row justify-center relative bg-[#131315] h-9  text-white">
+                <div class="text-[13px] font-bold px-5 pt-2">
+                  <p>FACEBOOK</p>
+                </div>
+              </div>
+
+              <!-- tags -->
+
+              <div class="mt-10 flex flex-row justify-center relative bg-[#131315] h-9  text-white">
+                <div class="text-[13px] font-bold px-5 pt-2">
+                  <p>TAGS</p>
+                </div>
+              </div>
+
+              <div class="flex flex-row gap-1  w-full flex-wrap">
+                <a href="" class="bg-white px-[11px] py-1 rounded-sm border text-[#222222] hover:text-white hover:bg-[#6FBA7B]">
+                    <p class="text-[12px]  font-normal">Beauty</p>
+                </a>
+                <a href="" class="bg-white px-[11px] py-1 rounded-sm border text-[#222222] hover:text-white hover:bg-[#6FBA7B]">
+                    <p class="text-[12px]  font-normal">DIY</p>
+                </a>
+                <a href="" class="bg-white px-[11px] py-1 rounded-sm border text-[#222222] hover:text-white hover:bg-[#6FBA7B]">
+                    <p class="text-[12px]  font-normal">FASHION</p>
+                </a>
+                <a href="" class="bg-white px-[11px] py-1 rounded-sm border text-[#222222] hover:text-white hover:bg-[#6FBA7B]">
+                    <p class="text-[12px]  font-normal">FOOD</p>
+                </a>
+                <a href="" class="bg-white px-[11px] py-1 rounded-sm border text-[#222222] hover:text-white hover:bg-[#6FBA7B]">
+                    <p class="text-[12px]  font-normal">GADGETS</p>
+                </a>
+                <a href="" class="bg-white px-[11px] py-1 rounded-sm border text-[#222222] hover:text-white hover:bg-[#6FBA7B]">
+                    <p class="text-[12px]  font-normal">IPAD</p>
+                </a>
+                <a href="" class="bg-white px-[11px] py-1 rounded-sm border text-[#222222] hover:text-white hover:bg-[#6FBA7B]">
+                    <p class="text-[12px]  font-normal">MOBILE</p>
+                </a>
+                <a href="" class="bg-white px-[11px] py-1 rounded-sm border text-[#222222] hover:text-white hover:bg-[#6FBA7B]">
+                    <p class="text-[12px]  font-normal">NEWS</p>
+                </a>
+                <a href="" class="bg-white px-[11px] py-1 rounded-sm border text-[#222222] hover:text-white hover:bg-[#6FBA7B]">
+                    <p class="text-[12px]  font-normal">SLIDER</p>
+                </a>
+                <a href="" class="bg-white px-[11px] py-1 rounded-sm border text-[#222222] hover:text-white hover:bg-[#6FBA7B]">
+                    <p class="text-[12px]  font-normal">SPORT</p>
+                </a>
+                <a href="" class="bg-white px-[11px] py-1 rounded-sm border text-[#222222] hover:text-white hover:bg-[#6FBA7B]">
+                    <p class="text-[12px]  font-normal">TECHNOLOGY</p>
+                </a>
+                <a href="" class="bg-white px-[11px] py-1 rounded-sm border text-[#222222] hover:text-white hover:bg-[#6FBA7B]">
+                    <p class="text-[12px]  font-normal">TRAVEL</p>
+                </a>
+                <a href="" class="bg-white px-[11px] py-1 rounded-sm border text-[#222222] hover:text-white hover:bg-[#6FBA7B]">
+                    <p class="text-[12px]  font-normal">VIDEO</p>
+                </a>
+                <a href="" class="bg-white px-[11px] py-1 rounded-sm border text-[#222222] hover:text-white hover:bg-[#6FBA7B]">
+                    <p class="text-[12px]  font-normal">WATCH</p>
+                </a>
+              </div>
+              
+
+              <!-- categories -->
+              <div class="mt-10 flex flex-row justify-center relative bg-[#131315] h-9  text-white">
+                <div class="text-[13px] font-bold px-5 pt-2">
+                  <p>CATEGORIES</p>
+                </div>
+              </div>
+              <!-- categories list -->
+              <div class="flex flex-col gap-2 font-normal text-[11px] text-black">
+                <!-- 1st category -->
+                <a href="" class="flex flex-row justify-between items-center"> 
+                  <div class="inline-flex items-center gap-1" href="">
+                    <span class="text-[8px] pt-1"><i class="fa-solid fa-chevron-right"></i></span>
+                    <p class="text-[13px]">Beauty</p>
+                  </div>
+                  <div>
+                    <p>(8)</p>
+                  </div>
+                </a>
+                <hr style="height: 0.5px; background-color: rgb(238, 238, 238); border: none;">
+                <!-- 2nd category -->
+                <a href="" class="flex flex-row justify-between items-center"> 
+                  <div class="inline-flex items-center gap-1" href="">
+                    <span class="text-[8px] pt-1"><i class="fa-solid fa-chevron-right"></i></span>
+                    <p class="text-[13px]">Business</p>
+                  </div>
+                  <div>
+                    <p>(5)</p>
+                  </div>
+                </a>
+                <hr style="height: 0.5px; background-color: rgb(238, 238, 238); border: none;">
+                <!-- 3rd category -->
+                <a href="" class="flex flex-row justify-between items-center"> 
+                  <div class="inline-flex items-center gap-1" href="">
+                    <span class="text-[8px] pt-1"><i class="fa-solid fa-chevron-right"></i></span>
+                    <p class="text-[13px]">Fashion</p>
+                  </div>
+                  <div>
+                    <p>(6)</p>
+                  </div>
+                </a>
+                <hr style="height: 0.5px; background-color: rgb(238, 238, 238); border: none;">
+                <!-- 4th category -->
+                <a href="" class="flex flex-row justify-between items-center"> 
+                  <div class="inline-flex items-center gap-1" href="">
+                    <span class="text-[8px] pt-1"><i class="fa-solid fa-chevron-right"></i></span>
+                    <p class="text-[13px]">Featured</p>
+                  </div>
+                  <div>
+                    <p>(8)</p>
+                  </div>
+                </a>
+                <hr style="height: 0.5px; background-color: rgb(238, 238, 238); border: none;">
+                <!-- 5th category -->
+                <a href="" class="flex flex-row justify-between items-center"> 
+                  <div class="inline-flex items-center gap-1" href="">
+                    <span class="text-[8px] pt-1"><i class="fa-solid fa-chevron-right"></i></span>
+                    <p class="text-[13px]">Food</p>
+                  </div>
+                  <div>
+                    <p>(8)</p>
+                  </div>
+                </a>
+                <hr style="height: 0.5px; background-color: rgb(238, 238, 238); border: none;">
+                <!-- 6th category -->
+                <a href="" class="flex flex-row justify-between items-center"> 
+                  <div class="inline-flex items-center gap-1" href="">
+                    <span class="text-[8px] pt-1"><i class="fa-solid fa-chevron-right"></i></span>
+                    <p class="text-[13px]">Learn</p>
+                  </div>
+                  <div>
+                    <p>(8)</p>
+                  </div>
+                </a>
+                <hr style="height: 0.5px; background-color: rgb(238, 238, 238); border: none;">
+
+                <!-- 7th category -->
+                <a href="" class="flex flex-row justify-between items-center"> 
+                  <div class="inline-flex items-center gap-1" href="">
+                    <span class="text-[8px] pt-1"><i class="fa-solid fa-chevron-right"></i></span>
+                    <p class="text-[13px]">Music</p>
+                  </div>
+                  <div>
+                    <p>(3)</p>
+                  </div>
+                </a>
+                <hr style="height: 0.5px; background-color: rgb(238, 238, 238); border: none;">
+
+                <!-- 8th category -->
+                <a href="" class="flex flex-row justify-between items-center"> 
+                  <div class="inline-flex items-center gap-1" href="">
+                    <span class="text-[8px] pt-1"><i class="fa-solid fa-chevron-right"></i></span>
+                    <p class="text-[13px]">Nature</p>
+                  </div>
+                  <div>
+                    <p>(8)</p>
+                  </div>
+                </a>
+                <hr style="height: 0.5px; background-color: rgb(238, 238, 238); border: none;">
+
+                <!-- 9th category -->
+                <a href="" class="flex flex-row justify-between items-center"> 
+                  <div class="inline-flex items-center gap-1" href="">
+                    <span class="text-[8px] pt-1"><i class="fa-solid fa-chevron-right"></i></span>
+                    <p class="text-[13px]">People</p>
+                  </div>
+                  <div>
+                    <p>(5)</p>
+                  </div>
+                </a>
+                <hr style="height: 0.5px; background-color: rgb(238, 238, 238); border: none;">
+
+                <!-- 10th category -->
+                <a href="" class="flex flex-row justify-between items-center"> 
+                  <div class="inline-flex items-center gap-1" href="">
+                    <span class="text-[8px] pt-1"><i class="fa-solid fa-chevron-right"></i></span>
+                    <p class="text-[13px]">Photography</p>
+                  </div>
+                  <div>
+                    <p>(3)</p>
+                  </div>
+                </a>
+                <hr style="height: 0.5px; background-color: rgb(238, 238, 238); border: none;">
+
+                <!-- 11th category -->
+                <a href="" class="flex flex-row justify-between items-center"> 
+                  <div class="inline-flex items-center gap-1" href="">
+                    <span class="text-[8px] pt-1"><i class="fa-solid fa-chevron-right"></i></span>
+                    <p class="text-[13px]">Sports</p>
+                  </div>
+                  <div>
+                    <p>(4)</p>
+                  </div>
+                </a>
+                <hr style="height: 0.5px; background-color: rgb(238, 238, 238); border: none;">
+
+                <!-- 12th category -->
+                <a href="" class="flex flex-row justify-between items-center"> 
+                  <div class="inline-flex items-center gap-1" href="">
+                    <span class="text-[8px] pt-1"><i class="fa-solid fa-chevron-right"></i></span>
+                    <p class="text-[13px]">Technology</p>
+                  </div>
+                  <div>
+                    <p>(4)</p>
+                  </div>
+                </a>
+              </div>
+              
+              
+            </div>
+          </div>
+        </div>
+
+        <!-- advertisement before categories and recent posts -->
+        <div class="pt-10 mt-10 mb-40 flex flex-col w-full bg-[#EEEEEE] h-24 border border-slate-300">
+          <div class="flex items-center justify-center ">
+            <a href="" class="text-center italic text-[#aaaaaa] text-[13px] font-normal">Responsive Advertisement</a>
+          </div>
+        </div>
+
+      </section>
+
+      <!-- this section is for the right sided scroll to top code -->
+      <!-- <section>
+        <div class="mx-4 my-4 flex justify-end" >
+          <div class="w-10 h-10 rounded-full bg-blue-600 cursor-pointer " >  
+              <p class="text-white text-center pt-1">∧</p>
+          </div>
+        </div>
+      </section> -->
+      
+    </div>
+  </section>
+
+  <!-- for the dark astheatic of the posts -->
+
+  <section class="w-full bg-black  -mt-24 mb-20 p-6 text-white">
+    <!-- the list -->
+    <div class="container flex flex-col gap-8">
+      <!-- 1st div -->
+      <div class="flex flex-col lg:flex-row justify-between gap-8">
+        <div class="flex flex-none gap-6 flex-col w-full lg:w-[65%]">
+          <!-- 1st list -->
+          <div class="flex flex-col md:flex-row justify-between gap-4 w-full">
+            <div class="flex flex-none overflow-hidden  group">
+              <div class="relative">
+                  <a href="#" class="">
+                      <div class=" group-hover:scale-110 transform transition ease-in-out duration-500">
+                          <img src="../assets/seo/darkPhotos/darkPhotos1/1.jpg"  class="w-screen h-[20rem] md:w-[16rem] md:h-[13rem] rounded-sm" id="" alt="">
+                      </div>
+                  </a>
+              </div>
+            </div>
+            <div class="flex flex-col gap-2">
+              <div class="text-white text-[13px] font-bold inline-flex gap-1">
+                <p class="italic text-[#6fba7b]">In</p><p>Beauty</p>
+              </div>
+              <div class="text-white text-[22px] font-bold" style="line-height: 29px;">
+                <a href="" >NASA Picks Moon Lander Designs by Elon Musk and Jeff Bezos Rocket Companies</a>
+              </div>
+              <div class="text-[13px] text-[#9a9a9a] font-medium flex items-center gap-3">
+                <div class="flex gap-1">
+                  <p class="font-bold text-[#9a9a9a]">BY</p> 
+                  <a href="">Sora Blogging Tips</a>
+                </div>
+
+                <div class="flex items-center gap-1">
+                  <span class="text-[#9a9a9a]"><i class="fa-solid fa-calendar-days"></i></span>
+                  <p>March 17, 2016</p>
+                </div>
+              </div>
+              <div class="text-[#9a9a9a] text-[13px] font-normal" style="line-height: 20px;">
+                <p>15Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,…</p>
+              </div>
+              
+            </div>
+          </div>
+
+          <!-- 2nd list -->
+          <div class="flex flex-col md:flex-row justify-between gap-4 w-full">
+            <div class="flex flex-none overflow-hidden  group">
+              <div class="relative">
+                  <a href="#" class="">
+                      <div class=" group-hover:scale-110 transform transition ease-in-out duration-500">
+                          <img src="../assets/seo/darkPhotos/darkPhotos1/2.jpg"  class="w-screen h-[20rem] md:w-[16rem] md:h-[13rem] rounded-sm" id="" alt="">
+                      </div>
+                  </a>
+              </div>
+            </div>
+            <div class="flex flex-col gap-2">
+              <div class="text-white text-[13px] font-bold inline-flex gap-1">
+                <p class="italic text-[#6fba7b]">In</p><p>Beauty</p>
+              </div>
+              <div class="text-white text-[22px] font-bold" style="line-height: 29px;">
+                <a href="" >NASA Picks Moon Lander Designs by Elon Musk and Jeff Bezos Rocket Companies</a>
+              </div>
+              <div class="text-[13px] text-[#9a9a9a] font-medium flex items-center gap-3">
+                <div class="flex gap-1">
+                  <p class="font-bold text-[#9a9a9a]">BY</p> 
+                  <a href="">Sora Blogging Tips</a>
+                </div>
+
+                <div class="flex items-center gap-1">
+                  <span class="text-[#9a9a9a]"><i class="fa-solid fa-calendar-days"></i></span>
+                  <p>March 17, 2016</p>
+                </div>
+              </div>
+              <div class="text-[#9a9a9a] text-[13px] font-normal" style="line-height: 20px;">
+                <p>15Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,…</p>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+        <div class="grid  grid-cols-1 md:grid-cols-2 lg:grid-cols-1 gap-4 justify-between">
+          <!-- 1st list -->
+          <div class="flex flex-row items-center  gap-4 w-full">
+            <div class="flex flex-none overflow-hidden  group">
+              <div class="relative">
+                  <a href="#" class="">
+                      <div class=" group-hover:scale-110 transform transition ease-in-out duration-500">
+                          <img src="../assets/seo/darkPhotos/darkPhotos2/1.jpg"  class="w-[5.5rem] h-[5rem] " id="" alt="">
+                      </div>
+                  </a>
+              </div>
+            </div>
+            <div class="flex flex-col gap-1">
+              <div class="text-white text-[13px] font-bold inline-flex gap-1">
+                <p class="italic text-[#6fba7b]">In</p><p>Beauty</p>
+              </div> 
+              <div class="text-white text-[13px] font-bold" style="line-height: 17px;">
+                <a href="" >‘People Are Getting in Planes’: The Travel Business Is Picking Up</a>
+              </div>
+              <div class="text-[11px] text-[#aaaaaa] font-medium flex items-center gap-3">
+                <div class="flex items-center gap-1 text-[11px] text-[#aaaaaa]">
+                  <span class=""><i class="fa-solid fa-calendar-days"></i></span>
+                  <p>Friday, March 18, 2016</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 2nd list -->
+          <div class="flex flex-row items-center  gap-4 w-full">
+            <div class="flex flex-none overflow-hidden  group">
+              <div class="relative">
+                  <a href="#" class="">
+                      <div class=" group-hover:scale-110 transform transition ease-in-out duration-500">
+                          <img src="../assets/seo/darkPhotos/darkPhotos2/2.jpg"  class="w-[5.5rem] h-[5rem] " id="" alt="">
+                      </div>
+                  </a>
+              </div>
+            </div>
+            <div class="flex flex-col gap-1">
+              <div class="text-white text-[13px] font-bold inline-flex gap-1">
+                <p class="italic text-[#6fba7b]">In</p><p>Beauty</p>
+              </div> 
+              <div class="text-white text-[13px] font-bold" style="line-height: 17px;">
+                <a href="" >‘People Are Getting in Planes’: The Travel Business Is Picking Up</a>
+              </div>
+              <div class="text-[11px] text-[#aaaaaa] font-medium flex items-center gap-3">
+                <div class="flex items-center gap-1 text-[11px] text-[#aaaaaa]">
+                  <span class=""><i class="fa-solid fa-calendar-days"></i></span>
+                  <p>Friday, March 18, 2016</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 3rd list -->
+          <div class="flex flex-row items-center  gap-4 w-full">
+            <div class="flex flex-none overflow-hidden  group">
+              <div class="relative">
+                  <a href="#" class="">
+                      <div class=" group-hover:scale-110 transform transition ease-in-out duration-500">
+                          <img src="../assets/seo/darkPhotos/darkPhotos2/3.jpg"  class="w-[5.5rem] h-[5rem] " id="" alt="">
+                      </div>
+                  </a>
+              </div>
+            </div>
+            <div class="flex flex-col gap-1">
+              <div class="text-white text-[13px] font-bold inline-flex gap-1">
+                <p class="italic text-[#6fba7b]">In</p><p>Beauty</p>
+              </div> 
+              <div class="text-white text-[13px] font-bold" style="line-height: 17px;">
+                <a href="" >‘People Are Getting in Planes’: The Travel Business Is Picking Up</a>
+              </div>
+              <div class="text-[11px] text-[#aaaaaa] font-medium flex items-center gap-3">
+                <div class="flex items-center gap-1 text-[11px] text-[#aaaaaa]">
+                  <span class=""><i class="fa-solid fa-calendar-days"></i></span>
+                  <p>Friday, March 18, 2016</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 4th list -->
+          <div class="flex flex-row items-center  gap-4 w-full">
+            <div class="flex flex-none overflow-hidden  group">
+              <div class="relative">
+                  <a href="#" class="">
+                      <div class=" group-hover:scale-110 transform transition ease-in-out duration-500">
+                          <img src="../assets/seo/darkPhotos/darkPhotos2/4.jpg"  class="w-[5.5rem] h-[5rem] " id="" alt="">
+                      </div>
+                  </a>
+              </div>
+            </div>
+            <div class="flex flex-col gap-1">
+              <div class="text-white text-[13px] font-bold inline-flex gap-1">
+                <p class="italic text-[#6fba7b]">In</p><p>Beauty</p>
+              </div> 
+              <div class="text-white text-[13px] font-bold" style="line-height: 17px;">
+                <a href="" >‘People Are Getting in Planes’: The Travel Business Is Picking Up</a>
+              </div>
+              <div class="text-[11px] text-[#aaaaaa] font-medium flex items-center gap-3">
+                <div class="flex items-center gap-1 text-[11px] text-[#aaaaaa]">
+                  <span class=""><i class="fa-solid fa-calendar-days"></i></span>
+                  <p>Friday, March 18, 2016</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2nd div -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <!-- 1st list -->
+        <div class="flex flex-col w-full md:max-w-sm gap-2">
+          <div class="flex flex-none overflow-hidden  group">
+            <div class="relative">
+                <a href="#" class="">
+                    <div class=" group-hover:scale-110 transform transition ease-in-out duration-500">
+                        <img src="../assets/seo/darkPhotos/darkPhotos3/1.jpg"  class="w-screen md:w-[24rem] lg:w-[16rem] h-[9rem]" id="" alt="">
+                    </div>
+                </a>
+            </div>
+          </div>
+          <div class="text-white text-[13px] font-bold inline-flex gap-1">
+            <p class="italic text-[#6fba7b]">In</p><p>Beauty</p>
+          </div>
+          <div class="text-white text-[14px] font-semibold" style="line-height: 21px;">
+            <a href="">California sheriff’s deputy shot during ‘ambush’ at police station, officials say</a>
+          </div>
+          <div class="flex items-center gap-1 text-[11px]">
+            <span class="text-[#aaaaaa]"><i class="fa-solid fa-calendar-days"></i></span>
+            <p>March 17, 2016</p>
+          </div>
+        </div>
+
+        <!-- 2nd list -->
+        <div class="flex flex-col w-full md:max-w-sm gap-2">
+          <div class="flex flex-none overflow-hidden  group">
+            <div class="relative">
+                <a href="#" class="">
+                    <div class=" group-hover:scale-110 transform transition ease-in-out duration-500">
+                        <img src="../assets/seo/darkPhotos/darkPhotos3/2.jpg"  class="w-screen md:w-[24rem] lg:w-[16rem] h-[9rem]" id="" alt="">
+                    </div>
+                </a>
+            </div>
+          </div>
+          <div class="text-white text-[13px] font-bold inline-flex gap-1">
+            <p class="italic text-[#6fba7b]">In</p><p>Beauty</p>
+          </div>
+          <div class="text-white text-[14px] font-semibold" style="line-height: 21px;">
+            <a href="">California sheriff’s deputy shot during ‘ambush’ at police station, officials say</a>
+          </div>
+          <div class="flex items-center gap-1 text-[11px]">
+            <span class="text-[#aaaaaa]"><i class="fa-solid fa-calendar-days"></i></span>
+            <p>March 17, 2016</p>
+          </div>
+        </div>
+
+        <!-- 3rd list -->
+        <div class="flex flex-col w-full md:max-w-sm gap-2">
+          <div class="flex flex-none overflow-hidden  group">
+            <div class="relative">
+                <a href="#" class="">
+                    <div class=" group-hover:scale-110 transform transition ease-in-out duration-500">
+                        <img src="../assets/seo/darkPhotos/darkPhotos3/3.jpg"  class="w-screen md:w-[24rem] lg:w-[16rem] h-[9rem]" id="" alt="">
+                    </div>
+                </a>
+            </div>
+          </div>
+          <div class="text-white text-[13px] font-bold inline-flex gap-1">
+            <p class="italic text-[#6fba7b]">In</p><p>Beauty</p>
+          </div>
+          <div class="text-white text-[14px] font-semibold" style="line-height: 21px;">
+            <a href="">California sheriff’s deputy shot during ‘ambush’ at police station, officials say</a>
+          </div>
+          <div class="flex items-center gap-1 text-[11px]">
+            <span class="text-[#aaaaaa]"><i class="fa-solid fa-calendar-days"></i></span>
+            <p>March 17, 2016</p>
+          </div>
+        </div>
+
+        <!-- 4th list -->
+        <div class="flex flex-col w-full md:max-w-sm gap-2">
+          <div class="flex flex-none overflow-hidden  group">
+            <div class="relative">
+                <a href="#" class="">
+                    <div class=" group-hover:scale-110 transform transition ease-in-out duration-500">
+                        <img src="../assets/seo/darkPhotos/darkPhotos3/4.jpg"  class="w-screen md:w-[24rem] lg:w-[16rem] h-[9rem]" id="" alt="">
+                    </div>
+                </a>
+            </div>
+          </div>
+          <div class="text-white text-[13px] font-bold inline-flex gap-1">
+            <p class="italic text-[#6fba7b]">In</p><p>Beauty</p>
+          </div>
+          <div class="text-white text-[14px] font-semibold" style="line-height: 21px;">
+            <a href="">California sheriff’s deputy shot during ‘ambush’ at police station, officials say</a>
+          </div>
+          <div class="flex items-center gap-1 text-[11px]">
+            <span class="text-[#aaaaaa]"><i class="fa-solid fa-calendar-days"></i></span>
+            <p>March 17, 2016</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- the white background popular posts -->
+  <section class="w-full bg-white  -mt-12 mb-20  text-black">
+    <div class="container flex flex-col gap-6">
+      <!-- most popular post header -->
+      <div class="flex flex-row justify-between relative bg-[#131315] h-9  text-white">
+        <div class="bg-[#6FBA7B] text-[12px] font-bold px-5 pt-2">
+          <p>MOST POPULAR</p>
+        </div>
+        <div class="bg-[#6FBA7B] text-[9px] font-bold m-2  px-2 rounded-sm flex items-center gap-1 cursor-pointer">
+          <p>SHOW MORE</p>
+          <span class="text-[6px]"><i class="fa-solid fa-chevron-right"></i></span>
+        </div>
+      </div>
+
+      <!-- most popular lists -->
+      <div class="flex flex-row flex-wrap justify-between gap-10 md:gap-0">
+        <!-- 1st popular list -->
+        <div class="flex flex-col w-full md:w-[21rem] gap-2">
+          <div class="flex flex-none overflow-hidden  group">
+            <div class="relative">
+                <a href="#" class="">
+                    <div class=" group-hover:scale-110 transform transition ease-in-out duration-500">
+                        <img src="../assets/seo/mostPopular/1.jpg"  class="w-screen md:w-[21rem] h-[11rem] rounded-sm" id="" alt="">
+                    </div>
+                </a>
+            </div>
+          </div>
+          <div class="text-black text-[13px] font-bold inline-flex gap-1">
+            <p class="italic text-[#6fba7b]">In</p><p>Beauty</p>
+          </div>
+          <div class="text-[#131315] text-[18px] font-bold " style="line-height: 27px;">
+            <a href="">NASA Picks Moon Lander Designs by Elon Musk and Jeff Bezos Rocket Companies</a>
+          </div>
+          <div class="text-[13px] text-[#afafaf] font-medium flex items-center gap-3">
+            <div class="flex gap-1">
+              <p class="font-bold text-black">BY</p> 
+              <a href="">Sora Blogging Tips</a>
+            </div>
+
+            <div class="flex items-center gap-1">
+              <span class="text-black"><i class="fa-solid fa-calendar-days"></i></span>
+              <p>Friday, March 18, 2016</p>
+            </div>
+          </div>
+          <div class="text-[#656565] text-[13px] font-normal" style="line-height: 20px;">
+            <p>15 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's…</p>
+          </div>
+        </div>
+
+        <!-- 2nd popular list -->
+        <div class="flex flex-col w-full md:w-[21rem] gap-2">
+          <div class="flex flex-none overflow-hidden  group">
+            <div class="relative">
+                <a href="#" class="">
+                    <div class=" group-hover:scale-110 transform transition ease-in-out duration-500">
+                        <img src="../assets/seo/mostPopular/2.jpg"  class="w-screen md:w-[21rem] h-[11rem] rounded-sm" id="" alt="">
+                    </div>
+                </a>
+            </div>
+          </div>
+          <div class="text-black text-[13px] font-bold inline-flex gap-1">
+            <p class="italic text-[#6fba7b]">In</p><p>Beauty</p>
+          </div>
+          <div class="text-[#131315] text-[18px] font-bold " style="line-height: 27px;">
+            <a href="">NASA Picks Moon Lander Designs by Elon Musk and Jeff Bezos Rocket Companies</a>
+          </div>
+          <div class="text-[13px] text-[#afafaf] font-medium flex items-center gap-3">
+            <div class="flex gap-1">
+              <p class="font-bold text-black">BY</p> 
+              <a href="">Sora Blogging Tips</a>
+            </div>
+
+            <div class="flex items-center gap-1">
+              <span class="text-black"><i class="fa-solid fa-calendar-days"></i></span>
+              <p>Friday, March 18, 2016</p>
+            </div>
+          </div>
+          <div class="text-[#656565] text-[13px] font-normal" style="line-height: 20px;">
+            <p>15 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's…</p>
+          </div>
+        </div>
+
+        <!-- 3rd popular list -->
+        <div class="flex flex-col w-full md:w-[21rem] gap-2">
+          <div class="flex flex-none overflow-hidden  group">
+            <div class="relative">
+                <a href="#" class="">
+                    <div class=" group-hover:scale-110 transform transition ease-in-out duration-500">
+                        <img src="../assets/seo/mostPopular/3.jpg"  class="w-screen md:w-[21rem] h-[11rem] rounded-sm" id="" alt="">
+                    </div>
+                </a>
+            </div>
+          </div>
+          <div class="text-black text-[13px] font-bold inline-flex gap-1">
+            <p class="italic text-[#6fba7b]">In</p><p>Beauty</p>
+          </div>
+          <div class="text-[#131315] text-[18px] font-bold " style="line-height: 27px;">
+            <a href="">NASA Picks Moon Lander Designs by Elon Musk and Jeff Bezos Rocket Companies</a>
+          </div>
+          <div class="text-[13px] text-[#afafaf] font-medium flex items-center gap-3">
+            <div class="flex gap-1">
+              <p class="font-bold text-black">BY</p> 
+              <a href="">Sora Blogging Tips</a>
+            </div>
+
+            <div class="flex items-center gap-1">
+              <span class="text-black"><i class="fa-solid fa-calendar-days"></i></span>
+              <p>Friday, March 18, 2016</p>
+            </div>
+          </div>
+          <div class="text-[#656565] text-[13px] font-normal" style="line-height: 20px;">
+            <p>15 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's…</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- the gray footer -->
+  <section class="w-full bg-[#F7F8FA] text-black ">
+    <div class="container flex flex-col lg:flex-row justify-between py-6 gap-6">
+      <!-- random posts -->
+      <div class="flex  flex-col gap-6 w-full lg:w-[21rem]">
+        
+          <p class="text-[16px] text-[#131315] font-bold">Random Posts</p>
+
+          <!-- 1st random post -->
+          <div class="flex flex-row   gap-4 w-full">
+            <div class="flex flex-none overflow-hidden  group">
+              <div class="relative">
+                  <a href="#" class="">
+                      <div class=" group-hover:scale-110 transform transition ease-in-out duration-500">
+                          <img src="../assets/seo/randomPosts/1.jpg"  class="w-[4.5rem] h-[4rem] rounded-sm" id="" alt="">
+                      </div>
+                  </a>
+              </div>
+            </div>
+            <div class="flex flex-col gap-1"> 
+              <div class="text-[#131315] text-[15px] font-normal" style="line-height: 23px;">
+                <a href="" >NASA Picks Moon Lander Designs by Elon Musk and Jeff Bezos Rocket Companies</a>
+              </div>
+              <div class="text-[11px] text-[#aaaaaa] font-medium flex items-center gap-3">
+                <div class="flex items-center gap-1 text-[11px] text-[#aaaaaa]">
+                  <span class=""><i class="fa-solid fa-calendar-days"></i></span>
+                  <p>March 18, 2016</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr style="height: 0.5px; background-color: rgb(238, 238, 238); border: none;">
+
+          <!-- 2nd random post -->
+          <div class="flex flex-row   gap-4 w-full">
+            <div class="flex flex-none overflow-hidden  group">
+              <div class="relative">
+                  <a href="#" class="">
+                      <div class=" group-hover:scale-110 transform transition ease-in-out duration-500">
+                          <img src="../assets/seo/randomPosts/2.jpg"  class="w-[4.5rem] h-[4rem] rounded-sm" id="" alt="">
+                      </div>
+                  </a>
+              </div>
+            </div>
+            <div class="flex flex-col gap-1"> 
+              <div class="text-[#131315] text-[15px] font-normal" style="line-height: 23px;">
+                <a href="" >NASA Picks Moon Lander Designs by Elon Musk and Jeff Bezos Rocket Companies</a>
+              </div>
+              <div class="text-[11px] text-[#aaaaaa] font-medium flex items-center gap-3">
+                <div class="flex items-center gap-1 text-[11px] text-[#aaaaaa]">
+                  <span class=""><i class="fa-solid fa-calendar-days"></i></span>
+                  <p>March 18, 2016</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr style="height: 0.5px; background-color: rgb(238, 238, 238); border: none;">
+
+          <!-- 3rd random post -->
+          <div class="flex flex-row   gap-4 w-full">
+            <div class="flex flex-none overflow-hidden  group">
+              <div class="relative">
+                  <a href="#" class="">
+                      <div class=" group-hover:scale-110 transform transition ease-in-out duration-500">
+                          <img src="../assets/seo/randomPosts/3.jpg"  class="w-[4.5rem] h-[4rem] rounded-sm" id="" alt="">
+                      </div>
+                  </a>
+              </div>
+            </div>
+            <div class="flex flex-col gap-1"> 
+              <div class="text-[#131315] text-[15px] font-normal" style="line-height: 23px;">
+                <a href="" >NASA Picks Moon Lander Designs by Elon Musk and Jeff Bezos Rocket Companies</a>
+              </div>
+              <div class="text-[11px] text-[#aaaaaa] font-medium flex items-center gap-3">
+                <div class="flex items-center gap-1 text-[11px] text-[#aaaaaa]">
+                  <span class=""><i class="fa-solid fa-calendar-days"></i></span>
+                  <p>March 18, 2016</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        
+      </div>
+      <!-- featured post -->
+      <div class="flex flex-col gap-6 w-full lg:w-[21rem]">
+        <p class="text-[16px] text-[#131315] font-bold">Featured post</p>
+
+        <div class="flex flex-col w-full lg:w-[21rem] gap-2">
+          <div class="flex flex-none overflow-hidden  group">
+            <div class="relative">
+                <a href="#" class="">
+                    <div class=" group-hover:scale-110 transform transition ease-in-out duration-500">
+                        <img src="../assets/seo/featuredPost/1.jpg"  class="w-screen lg:w-[21rem] h-[11rem] rounded-sm" id="" alt="">
+                    </div>
+                </a>
+            </div>
+          </div>
+          <div class="text-[#131315] text-[18px] font-bold " style="line-height: 27px;">
+            <a href="" class="hover:underline">Team Bitbose geared up to attend Blockchain World Conference ’18 in Atlantic City, New Jersey</a>
+          </div>
+          <div class="text-[13px] text-[#aaaaaa] font-medium flex items-center gap-3">
+            <div class="flex gap-1">
+              <p class="font-bold ">BY</p> 
+              <a href="">Sora Blogging Tips</a>
+            </div>
+
+            <div class="flex items-center gap-1">
+              <span class=""><i class="fa-solid fa-calendar-days"></i></span>
+              <p>Friday, March 18, 2016</p>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+      <!-- popular post -->
+      <div class="flex  flex-col gap-6 w-full lg:w-[21rem]">
+        
+        <p class="text-[16px] text-[#131315] font-bold">Popular Posts</p>
+
+        <!-- 1st popular post -->
+        <div class="flex flex-row   gap-4 w-full">
+          <div class="flex flex-none overflow-hidden  group">
+            <div class="relative">
+                <a href="#" class="">
+                    <div class=" group-hover:scale-110 transform transition ease-in-out duration-500">
+                        <img src="../assets/seo/randomPosts/1.jpg"  class="w-[4.5rem] h-[4rem] rounded-sm" id="" alt="">
+                    </div>
+                </a>
+            </div>
+          </div>
+          <div class="flex flex-col gap-1"> 
+            <div class="text-[#131315] text-[15px] font-normal" style="line-height: 23px;">
+              <a href="" >NASA Picks Moon Lander Designs by Elon Musk and Jeff Bezos Rocket Companies</a>
+            </div>
+            <div class="text-[11px] text-[#aaaaaa] font-medium flex items-center gap-3">
+              <div class="flex items-center gap-1 text-[11px] text-[#aaaaaa]">
+                <span class=""><i class="fa-solid fa-calendar-days"></i></span>
+                <p>March 18, 2016</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr style="height: 0.5px; background-color: rgb(238, 238, 238); border: none;">
+
+        <!-- 2nd popular post -->
+        <div class="flex flex-row   gap-4 w-full">
+          <div class="flex flex-none overflow-hidden  group">
+            <div class="relative">
+                <a href="#" class="">
+                    <div class=" group-hover:scale-110 transform transition ease-in-out duration-500">
+                        <img src="../assets/seo/randomPosts/2.jpg"  class="w-[4.5rem] h-[4rem] rounded-sm" id="" alt="">
+                    </div>
+                </a>
+            </div>
+          </div>
+          <div class="flex flex-col gap-1"> 
+            <div class="text-[#131315] text-[15px] font-normal" style="line-height: 23px;">
+              <a href="" >NASA Picks Moon Lander Designs by Elon Musk and Jeff Bezos Rocket Companies</a>
+            </div>
+            <div class="text-[11px] text-[#aaaaaa] font-medium flex items-center gap-3">
+              <div class="flex items-center gap-1 text-[11px] text-[#aaaaaa]">
+                <span class=""><i class="fa-solid fa-calendar-days"></i></span>
+                <p>March 18, 2016</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr style="height: 0.5px; background-color: rgb(238, 238, 238); border: none;">
+
+        <!-- 3rd popular post -->
+        <div class="flex flex-row   gap-4 w-full">
+          <div class="flex flex-none overflow-hidden  group">
+            <div class="relative">
+                <a href="#" class="">
+                    <div class=" group-hover:scale-110 transform transition ease-in-out duration-500">
+                        <img src="../assets/seo/randomPosts/3.jpg"  class="w-[4.5rem] h-[4rem] rounded-sm" id="" alt="">
+                    </div>
+                </a>
+            </div>
+          </div>
+          <div class="flex flex-col gap-1"> 
+            <div class="text-[#131315] text-[15px] font-normal" style="line-height: 23px;">
+              <a href="" >NASA Picks Moon Lander Designs by Elon Musk and Jeff Bezos Rocket Companies</a>
+            </div>
+            <div class="text-[11px] text-[#aaaaaa] font-medium flex items-center gap-3">
+              <div class="flex items-center gap-1 text-[11px] text-[#aaaaaa]">
+                <span class=""><i class="fa-solid fa-calendar-days"></i></span>
+                <p>March 18, 2016</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+      </div>
+    </div>
+
+    <!-- for hr tag -->
+    <div class="lg:container py-3">
+      <hr style="height: 1px; background-color: rgb(238, 238, 238); border: none;">
+    </div>
+    <!-- the actual footer -->
+    <div class="container">
+      
+      <div class="flex flex-col-reverse md:flex-row items-center justify-center md:justify-between pt-1 pb-5 md:pb-4 gap-4">
+        <!-- Copyright -->
+        <div class="inline-flex gap-1 text-[13px] font-semibold">
+          <p>Copyright 	&#169; 2022</p>
+          <a href="" class="text-[#6fba7b]">My Blog</a>
+        </div>
+        <!-- footer menu -->
+        <div class="flex  flex-row flex-wrap gap-4 items-center justify-center text-[11px] font-semibold">
+          <div>
+            <a href="">HOME</a>
+          </div>
+          <div>
+            <a href="">ABOUT</a>
+          </div>
+          <div>
+            <a href="" class="whitespcae-nowrap">CONTACT US</a>
+          </div>
+          <div>
+            <a href="indexTermsServices.html" class="uppercase whitespcae-nowrap">Terms & Condition</a>
+          </div>
+          <div>
+            <a href="indexPrivacyPolicy.html" class="uppercase whitespcae-nowrap">Privacy Policy</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+
+  
+
+  
+  
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="../slick/slick.min.js"></script>
+
+  <script src="./js/slick.js"></script>
+  <script src="./js/main.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,266 @@
+/* since nested groupes are not supported we have to use 
+       regular css for the nested dropdowns 
+    */
+    li>ul                 { transform: translatex(100%) scale(0) }
+    /* for link up */
+    /* a>ul                 { transform: translatex(100%) scale(0) } */
+    li:hover>ul           { transform: translatex(101%) scale(1) }
+    /* for link up */
+    /* a:hover>ul           { transform: translatex(101%) scale(1) } */
+    li > button svg       { transform: rotate(-90deg) }
+    /* li:hover > button svg { transform: rotate(-270deg) } */
+  
+    /* Below styles fake what can be achieved with the tailwind config
+       you need to add the group-hover variant to scale and define your custom
+       min width style.
+         See https://codesandbox.io/s/tailwindcss-multilevel-dropdown-y91j7?file=/index.html
+         for implementation with config file
+    */
+    .group:hover .group-hover\:scale-100 { transform: scale(1) }
+    .group:hover .group-hover\:-rotate-180 { transform: rotate(180deg) }
+    .scale-0 { transform: scale(0) }
+    .min-w-32 { min-width: 8rem }
+    .min-w-mega { min-width: 6rem }
+
+/* for mega menu */
+
+.mega-menu {
+    display: none;
+    left: 0;
+    position: absolute;
+    text-align: left;
+    width: 100%;
+  }
+
+
+
+  /* #hoverable Class Styles
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+  .hoverable {
+    position: static;
+  }
+
+  .hoverable > a:after {
+    content: "\25BC";
+    font-size: 10px;
+    padding-left: 6px;
+    position: relative;
+    /* top: -1px; */
+  }
+
+  .hoverable:hover .mega-menu {
+    display: block;
+  }
+
+
+  /* #toggle Class Styles
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+  .toggleable > label:after {
+    content: "\25BC";
+    font-size: 10px;
+    padding-left: 6px;
+    position: relative;
+    top: -1px;
+  }
+
+  .toggle-input {
+    display: none;
+  }
+  .toggle-input:not(checked) ~ .mega-menu {
+    display: none;
+  }
+
+  .toggle-input:checked ~ .mega-menu {
+    display: block;
+  }
+
+  .toggle-input:checked + label {
+    color: white;
+    background: #2c5282; /*@apply bg-blue-800 */
+  }
+
+  .toggle-input:checked ~ label:after {
+    content: "\25B2";
+    font-size: 10px;
+    padding-left: 6px;
+    position: relative;
+    top: -1px;
+  }
+
+
+  /* for image hover */
+
+  .darken-pseudo {
+            position: relative;
+        }
+
+  .darken-pseudo:after {
+          content: '';
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+  }
+
+  /* for the hr tag */
+
+  .yellowMargin {
+    background-color: rgba(189, 183, 183, 0.071);
+    border: none;
+    display: block;
+    height: 0.5px;
+    overflow: visible;
+    position: relative;
+    width: 100%;
+}
+
+  .yellowMargin:before {
+    background-color: #FFFF00;
+    content: '';
+    display: block;
+    height: 2.5px;
+    left: 0;
+    position: absolute;
+    top: -2px;
+    width: 10%;
+    z-index: 1;
+}
+
+.footerPostHR{
+    background-color: rgba(189, 183, 183, 0.071);
+    border: none;
+    display: block;
+    height: 0.5px;
+    overflow: visible;
+    position: relative;
+    width: 100%;
+}
+
+
+/* .editorChoice {
+    background-color: #131315;
+    display: block;
+    overflow: visible;
+    position: relative;
+    width: 100%;
+}
+
+.editorChoice:before {
+    background-color: #6FBA7B;
+    display: block;
+    height: 32px;
+    left: 0;
+    position: absolute;
+    top: 0px;
+    width: 15%;
+} */
+
+
+/* for the blockquote before after */
+
+
+
+blockquote:before {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    content: '\f10e';
+    font-family: 'Font Awesome 5 Free';
+    font-size: 33px;
+    font-style: normal;
+    font-weight: 900;
+    color: #000;
+    line-height: 1;
+    opacity: .05;
+    margin: 0;
+}
+
+blockquote:after {
+    position: absolute;
+    content: '\201D';
+    font-family: 'Font Awesome 5 Free';
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 900;
+    color: #000;
+    opacity: .5;
+    margin: 0 0 0 10px;
+}
+
+
+/* for the first page css code */
+
+@media screen and (min-width: 1150px){
+    .leftRightFlex{
+        flex-direction:row;
+    }
+    .rightFlexWidth{
+      width:31%;
+    }
+}
+@media only screen and (max-width: 1149px) {
+  .leftRightFlex{
+        flex-direction:column;
+  }
+  
+}
+
+@media (min-width: 1150px) {
+    .leftRightFlex\:space-x-10 > :not([hidden]) ~ :not([hidden]) {
+        --tw-space-x-reverse: 0;
+        margin-right: calc(2.5rem * var(--tw-space-x-reverse));
+        margin-left: calc(2.5rem * calc(1 - var(--tw-space-x-reverse)));
+    }
+}
+
+@media (min-width: 1150px) {
+    .adPhotos\:w-full {
+        width: 100%;
+    }
+}
+
+/* now for the second page */
+
+@media (min-width: 1230px) {
+    .recentLists {
+        width: 23rem/* 368px */;
+    }
+    .recentListPhoto{
+      width: 24rem;
+    }
+}
+
+@media only screen and (min-width: 1023px) and (max-width:1229px) {
+  .recentLists{
+        width:100%;
+  }
+  .recentListPhoto{
+      width: 100vw;
+    }
+  
+}
+
+@media only screen and (min-width: 768px) and (max-width:1022px){
+    .recentLists{
+        width: 21rem/* 336px */;
+    }
+    .recentListPhoto{
+      width: 24rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .recentLists{
+        width: 100%;
+    }
+    recentListPhoto{
+      width: 100vw;
+    }
+}
+
+/* for the third page */
+
+
+
