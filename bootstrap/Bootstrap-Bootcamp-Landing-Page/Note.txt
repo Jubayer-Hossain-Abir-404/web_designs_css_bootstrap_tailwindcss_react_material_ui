@@ -1,0 +1,149 @@
+* With CDN Link Bootstrap can not be customized
+
+* In order to edit one needs Source Files( Saas Files)
+
+* In bootstrap5 there is no need to add jquery file
+
+* navbar navbar-expand-lg bg-dark navbar-dark
+Here, expand-lg = If the page crosses the large point 
+hamburger menu will show up
+
+bg-dark = for dark background
+navbar-dark = for light text in a dark
+background
+
+* In div just write use dot to get the
+class name
+
+* If I press dot [class name] then div
+will open
+
+* If tag.[class-name]. Then the class will
+appear in the tag
+
+* class="contaner" could be the replacement
+for padding
+
+
+* collapse navbar-collapse -> this is for navbar
+collapsing when size gets smaller
+
+* <ul class="navbar-nav ms-auto"> for
+ moving the menu to the right
+
+ * Hamburger Menu Button
+
+ * data-bs-toggle = the navbar to collapse
+
+ * data-bs-target = to some kind of target
+
+* The above two things are known as attributes
+
+* padding highest value = 5
+
+* pt = padding top
+* pb = padding bottom
+* px = padding x-axis
+* py = padding y-axis
+* p = padding all over
+
+
+* class="d-flex" two tags side by
+side in a row
+
+* Image will break out of the container
+For that class="img-fluid" in <img>
+
+* class="img-fluid w-50" which will make it half
+the size
+
+* <div class="d-sm-flex"> which makes the contents
+not flex in small screen
+
+* <p class="lead"> = This will help to 
+make the text appear bigger
+
+* <section class="bg-dark text-light p-5 text-center text-sm-start">
+Here, text-sm-start means the text will be centered when the screen is 
+small. Otherwise it will be left aligned
+
+* <img class="d-none"> will make the
+the image disappear
+
+* class="img-fluid w-50 d-none d-sm-block"
+will make the image disappear in small screen
+with the help of d-sm-block
+
+* <div class="d-sm-flex align-items-center 
+justify-content-between">
+
+This helps the contents to be in center and
+create space among them. The text will put into
+the center of the image 
+align-items-center = Text Content to be put into
+the center
+justify-content-between = creates a space two content
+
+* d-md-flex = it will not break until the screen is medium
+
+* <h3 class="mb-3 mb-md-0">
+This makes the margin bottom 0 when the screen is medium
+
+* pt-lg-5 = when the screen is large 
+padding top will be 5
+
+
+* @media(min-width: 768px){
+    .news-input{
+        width: 50%;
+    }
+}
+
+It is media query used in css 
+Meaning the class content will be of width 50% over the width
+of 768px
+
+* <div class="col-md">
+Meaning the columns will get stacked when the the screen hits md or smaller
+
+* class h1 can be used to make the 
+item bigger
+
+* Dummy text can be brought by using lorem10
+or lorem15
+
+* <div class="row text-center g-4">
+for creating a gap between grid contents
+
+* <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 fixed-top">
+use fixed-top to to get the navbar constantly over the places
+
+* body::before{
+    display:block;
+    content: '';
+    height:60px;
+}
+
+Here, body then a pseudo selector before
+When before is used content should be added
+No content was added that's why it's empty
+height:60px. Basically, it will add a ghost element of 60 px
+
+
+* Accordion
+
+
+* To change all the same text at the same time
+mark the text and use ctrl + d
+
+* section#instructors.p-5.bg-primary
+
+To get the tag with id and class
+
+
+* <div class="col-md-6 col-lg-3">
+In medium screen it will have a column of two
+and in large screen it will have a column of three
+
+* <span class="fw-bold">
+For font width and bold
